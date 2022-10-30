@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Please type your name");
+﻿using System;
+
+Console.WriteLine("Please type your name");
 
 string name = Console.ReadLine();
 DateTime date = DateTime.Now;
@@ -18,16 +20,16 @@ string gameSelected = Console.ReadLine();
 
 if (gameSelected.Trim().ToLower() == "a")
 {
-    Console.WriteLine("Addition game selected");
+    AdditionGame("Addition game selected");
 } else if (gameSelected.Trim().ToLower() == "s")
 {
-    Console.WriteLine("Subtraction game selected");
+    SubtractionGame("Subtraction game selected");
 } else if (gameSelected.Trim().ToLower() == "m")
 {
-    Console.WriteLine("Multiplication game selected");
+    MultiplicationGame("Multiplication game selected");
 } else if (gameSelected.Trim().ToLower() == "d")
 {
-    Console.WriteLine("Division game selected");
+    DivisionGame("Division game selected");
 } else if (gameSelected.Trim().ToLower() == "q")
 {
     Console.WriteLine("Goodbye");
@@ -40,7 +42,27 @@ if (gameSelected.Trim().ToLower() == "a")
 }
 
 
-Console.ReadLine();
+// Methods
+
+void AdditionGame( string message)
+{
+    Console.WriteLine(message);
+}
+
+void SubtractionGame(string message)
+{
+    Console.WriteLine(message);
+}
+
+void MultiplicationGame(string message)
+{
+    Console.WriteLine(message);
+}
+
+void DivisionGame(string message)
+{
+    Console.WriteLine(message);
+}
 
 
 
