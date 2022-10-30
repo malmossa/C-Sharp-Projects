@@ -12,7 +12,32 @@ S - Subtraction
 M - Multiplication
 D - Division
 Q - Quit the program");
-Console.WriteLine("--------------------------------------");
+Console.WriteLine("--------------------------------------"); 
+
+string gameSelected = Console.ReadLine();
+
+if (gameSelected.Trim().ToLower() == "a")
+{
+    Console.WriteLine("Addition game selected");
+} else if (gameSelected.Trim().ToLower() == "s")
+{
+    Console.WriteLine("Subtraction game selected");
+} else if (gameSelected.Trim().ToLower() == "m")
+{
+    Console.WriteLine("Multiplication game selected");
+} else if (gameSelected.Trim().ToLower() == "d")
+{
+    Console.WriteLine("Division game selected");
+} else if (gameSelected.Trim().ToLower() == "q")
+{
+    Console.WriteLine("Goodbye");
+
+    Environment.Exit(1);
+} else
+{
+    Console.WriteLine("Invalid input!");
+
+}
 
 
 Console.ReadLine();
