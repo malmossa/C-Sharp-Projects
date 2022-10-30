@@ -1,17 +1,22 @@
 ﻿
-Console.WriteLine("Please type your name");
-
-string name = Console.ReadLine();
 DateTime date = DateTime.Now;
+string name = GetName();
 
 
 
-Menu(name, date);
+Menu(name);
 
 
 // Methods
 
-void Menu(string name, DateTime date) {
+string GetName()
+{
+    Console.WriteLine("Please type your name");
+    string name = Console.ReadLine();
+    return name; 
+}
+
+void Menu(string name) {
     Console.WriteLine("-------------------------");
     Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}. This is your math game.\n");
     Console.WriteLine($@"What game would you like to play today? Choose from the option below:
@@ -52,22 +57,136 @@ void Menu(string name, DateTime date) {
 void AdditionGame( string message)
 {
     Console.WriteLine(message);
+
+    Random random = new Random();
+    int score = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i ++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+
+        Console.WriteLine($"{firstNumber} + {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber + secondNumber)
+        {
+            Console.WriteLine("Your answer is correct!");
+            score++;
+        } else
+        {
+            Console.WriteLine("Your answer is incorrect.");
+        }
+
+        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
+    }
+
+    
 }
 
 void SubtractionGame(string message)
 {
     Console.WriteLine(message);
+
+    Random random = new Random();
+    int score = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+
+        Console.WriteLine($"{firstNumber} - {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber - secondNumber)
+        {
+            Console.WriteLine("Your answer is correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("Your answer is incorrect.");
+        }
+
+        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
+    }
+
 }
 
 void MultiplicationGame(string message)
 {
     Console.WriteLine(message);
+
+    Random random = new Random();
+    int score = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+
+        Console.WriteLine($"{firstNumber} * {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber * secondNumber)
+        {
+            Console.WriteLine("Your answer is correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("Your answer is incorrect.");
+        }
+
+        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
+    }
 }
 
 void DivisionGame(string message)
 {
     Console.WriteLine(message);
+
+    Random random = new Random();
+    int score = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+
+        Console.WriteLine($"{firstNumber} / {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber / secondNumber)
+        {
+            Console.WriteLine("Your answer is correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("Your answer is incorrect.");
+        }
+
+        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
+    }
+
 }
+
+Console.ReadLine(); 
+
 
 
 
