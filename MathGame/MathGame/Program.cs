@@ -154,35 +154,23 @@ void MultiplicationGame(string message)
 
 void DivisionGame(string message)
 {
-    Console.WriteLine(message);
+    GetDivisionNumber();
+}
 
+int[] GetDivisionNumber()
+{
     Random random = new Random();
-    int score = 0;
+    int firstNumber = random.Next(0, 99);
+    int seconNumber = random.Next(0, 99);
 
-    int firstNumber;
-    int secondNumber;
+    int[] result = new int[2];
 
-    for (int i = 0; i < 5; i++)
-    {
-        firstNumber = random.Next(1, 9);
-        secondNumber = random.Next(1, 9);
+    result[0] = firstNumber;
+    result[1] = seconNumber;
 
-        Console.WriteLine($"{firstNumber} / {secondNumber}");
-        string result = Console.ReadLine();
+    Console.WriteLine(result);
 
-        if (int.Parse(result) == firstNumber / secondNumber)
-        {
-            Console.WriteLine("Your answer is correct!");
-            score++;
-        }
-        else
-        {
-            Console.WriteLine("Your answer is incorrect.");
-        }
-
-        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
-    }
-
+    return result;
 }
 
 Console.ReadLine(); 
