@@ -1,4 +1,6 @@
 ﻿
+using static System.Formats.Asn1.AsnWriter;
+
 DateTime date = DateTime.Now;
 string name = GetName();
 
@@ -32,16 +34,16 @@ void Menu(string name) {
     switch (gameSelected.Trim().ToLower())
     {
         case "a":
-            AdditionGame("Addition game selected");
+            AdditionGame("Addition game");
             break;
         case "s":
-            SubtractionGame("Subtraction game selected");
+            SubtractionGame("Subtraction game");
             break;
         case "m":
-            MultiplicationGame("Multiplication game selected");
+            MultiplicationGame("Multiplication game");
             break;
         case "d":
-            DivisionGame("Division game selected");
+            DivisionGame("Division game");
             break;
         case "q":
             Console.WriteLine("Goodbye");
@@ -56,6 +58,7 @@ void Menu(string name) {
 
 void AdditionGame( string message)
 {
+    Console.Clear();
     Console.WriteLine(message);
 
     Random random = new Random();
@@ -74,11 +77,13 @@ void AdditionGame( string message)
 
         if (int.Parse(result) == firstNumber + secondNumber)
         {
-            Console.WriteLine("Your answer is correct!");
+            Console.WriteLine("Your answer is correct! Type any key for the next question");
             score++;
+            Console.ReadLine();
         } else
         {
-            Console.WriteLine("Your answer is incorrect.");
+            Console.WriteLine("Your answer is incorrect. Type any key for the next question");
+            Console.ReadLine();
         }
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
@@ -89,6 +94,7 @@ void AdditionGame( string message)
 
 void SubtractionGame(string message)
 {
+    Console.Clear();
     Console.WriteLine(message);
 
     Random random = new Random();
@@ -107,12 +113,14 @@ void SubtractionGame(string message)
 
         if (int.Parse(result) == firstNumber - secondNumber)
         {
-            Console.WriteLine("Your answer is correct!");
+            Console.WriteLine("Your answer is correct! Type any key for the next question");
             score++;
+            Console.ReadLine();
         }
         else
         {
-            Console.WriteLine("Your answer is incorrect.");
+            Console.WriteLine("Your answer is incorrect. Type any key for the next question");
+            Console.ReadLine();
         }
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
@@ -122,6 +130,7 @@ void SubtractionGame(string message)
 
 void MultiplicationGame(string message)
 {
+    Console.Clear();
     Console.WriteLine(message);
 
     Random random = new Random();
@@ -140,12 +149,14 @@ void MultiplicationGame(string message)
 
         if (int.Parse(result) == firstNumber * secondNumber)
         {
-            Console.WriteLine("Your answer is correct!");
+            Console.WriteLine("Your answer is correct! Type any key for the next question");
             score++;
+            Console.ReadLine();
         }
         else
         {
-            Console.WriteLine("Your answer is incorrect.");
+            Console.WriteLine("Your answer is incorrect. Type any key for the next question");
+            Console.ReadLine();
         }
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
@@ -154,21 +165,53 @@ void MultiplicationGame(string message)
 
 void DivisionGame(string message)
 {
-    GetDivisionNumber();
+   int score = 0;
+
+   for (int i = 0; i < 5; i++)
+    {
+        Console.Clear();
+        Console.WriteLine(message);
+
+        int[] divisionNumbers = GetDivisionNumber();
+        int firstNumber = divisionNumbers[0];
+        int secondNumber = divisionNumbers[1];
+
+        Console.WriteLine($"{firstNumber} / {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber / secondNumber)
+        {
+            Console.WriteLine("Your answer is correct! Type any key for the next question");
+            score++;
+            Console.ReadLine();
+        }
+        else
+        {
+            Console.WriteLine("Your answer is incorrect. Type any key for the next question");
+            Console.ReadLine();
+        }
+
+        if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
+    }
 }
 
 int[] GetDivisionNumber()
 {
     Random random = new Random();
-    int firstNumber = random.Next(0, 99);
-    int seconNumber = random.Next(0, 99);
+    int firstNumber = random.Next(1, 99);
+    int secondNumber = random.Next(1, 99);
 
     int[] result = new int[2];
 
-    result[0] = firstNumber;
-    result[1] = seconNumber;
+    while (firstNumber % secondNumber != 0)
+    {
+        firstNumber = random.Next(1, 99);
+        secondNumber = random.Next(1, 99);
+    }
 
-    Console.WriteLine(result);
+    result[0] = firstNumber;
+    result[1] = secondNumber;
+
 
     return result;
 }
