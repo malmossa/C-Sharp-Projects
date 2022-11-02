@@ -21,40 +21,47 @@ string GetName()
 void Menu(string name) {
     Console.WriteLine("-------------------------");
     Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}. This is your math game.\n");
-    Console.WriteLine($@"What game would you like to play today? Choose from the option below:
-    A - Addition
-    S - Subtraction
-    M - Multiplication
-    D - Division
-    Q - Quit the program");
-    Console.WriteLine("--------------------------------------");
 
-    string gameSelected = Console.ReadLine();
+    bool isGameOn = true;
 
-    switch (gameSelected.Trim().ToLower())
+    do
     {
-        case "a":
-            AdditionGame("Addition game");
-            break;
-        case "s":
-            SubtractionGame("Subtraction game");
-            break;
-        case "m":
-            MultiplicationGame("Multiplication game");
-            break;
-        case "d":
-            DivisionGame("Division game");
-            break;
-        case "q":
-            Console.WriteLine("Goodbye");
-            Environment.Exit(0);
-            break;
-        default:
-            Console.WriteLine("Invalid input!");
-            Environment.Exit(0);
-            break;
-    }
-}
+        Console.WriteLine($@"What game would you like to play today? Choose from the option below:
+        A - Addition
+        S - Subtraction
+        M - Multiplication
+        D - Division
+        Q - Quit the program");
+        Console.WriteLine("--------------------------------------");
+
+        string gameSelected = Console.ReadLine();
+
+        switch (gameSelected.Trim().ToLower())
+        {
+            case "a":
+                AdditionGame("Addition game");
+                break;
+            case "s":
+                SubtractionGame("Subtraction game");
+                break;
+            case "m":
+                MultiplicationGame("Multiplication game");
+                break;
+            case "d":
+                DivisionGame("Division game");
+                break;
+            case "q":
+                Console.WriteLine("Goodbye");
+                isGameOn = false;
+                break;
+            default:
+                Console.WriteLine("Invalid input!");
+                break;
+        }
+
+     } while (isGameOn) ;
+
+ }
 
 void AdditionGame( string message)
 {
