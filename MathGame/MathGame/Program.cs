@@ -1,7 +1,8 @@
 ﻿
-using static System.Formats.Asn1.AsnWriter;
-
 DateTime date = DateTime.Now;
+
+List<string> games = new List<string>();
+
 string name = GetName();
 
 
@@ -27,6 +28,7 @@ void Menu(string name) {
     do
     {
         Console.WriteLine($@"What game would you like to play today? Choose from the option below:
+        V - View Previous Games
         A - Addition
         S - Subtraction
         M - Multiplication
@@ -38,6 +40,9 @@ void Menu(string name) {
 
         switch (gameSelected.Trim().ToLower())
         {
+            case "v":
+                GetGames();
+                break;
             case "a":
                 AdditionGame("Addition game");
                 break;
@@ -62,6 +67,20 @@ void Menu(string name) {
      } while (isGameOn) ;
 
  }
+
+
+void GetGames()
+{
+    Console.Clear();
+    Console.WriteLine("Games History:");
+    Console.WriteLine("-----------------");
+
+    foreach (String game in games)
+    {
+        Console.WriteLine(game);
+    }
+    Console.WriteLine("-----------------\n");
+}
 
 void AdditionGame( string message)
 {
@@ -96,7 +115,8 @@ void AdditionGame( string message)
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
     }
 
-    
+    games.Add($"{DateTime.Now} - Addition: Score = {score}");
+
 }
 
 void SubtractionGame(string message)
@@ -132,6 +152,7 @@ void SubtractionGame(string message)
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
     }
+        games.Add($"{DateTime.Now} - Subtraction: Score = {score}");
 
 }
 
@@ -168,15 +189,16 @@ void MultiplicationGame(string message)
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
     }
+    games.Add($"{DateTime.Now} - Multiplication: Score = {score}");
 }
 
 void DivisionGame(string message)
 {
+   Console.Clear();
    int score = 0;
 
    for (int i = 0; i < 5; i++)
     {
-        Console.Clear();
         Console.WriteLine(message);
 
         int[] divisionNumbers = GetDivisionNumber();
@@ -200,6 +222,7 @@ void DivisionGame(string message)
 
         if (i == 4) { Console.WriteLine($"GAME OVER !! Your final score: {score}"); }
     }
+    games.Add($"{DateTime.Now} - Division: Score = {score}");
 }
 
 int[] GetDivisionNumber()
