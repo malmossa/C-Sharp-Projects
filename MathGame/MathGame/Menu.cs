@@ -3,28 +3,27 @@ namespace MathGame
 {
     internal class Menu
     {
-        GameEngine gamesClass = new();
+        GameEngine gameEngine = new GameEngine();
 
         internal void ShowMenu(string name, DateTime date)
         {
+            bool isGameOn = true;
+
             Console.WriteLine("---------------------------------------------");
-            Console.WriteLine($"Hello {name}. It's {date}. This is your math's game. That's great that you're working on improving yourself");
-            Console.WriteLine("\n");
-
-            var isGameOn = true;
-
+            Console.WriteLine($"Hello {name}. It's {date}. This is your math's game.");
+            
             do
             {
-                Console.Clear();
-                Console.WriteLine(@$"
-                What game would you like to play today? Choose from the options below:
-                V - View Previous Games
-                A - Addition
-                S - Subtraction
-                M - Multiplication
-                D - Division
-                Q - Quit the program");
-                Console.WriteLine("---------------------------------------------");
+    
+             Console.WriteLine(@$"
+             What game would you like to play today? Choose from the options below:
+             V - View Previous Games
+             A - Addition
+             S - Subtraction
+             M - Multiplication
+             D - Division
+             Q - Quit the program");
+             Console.WriteLine("---------------------------------------------");
 
                 var gameSelected = Console.ReadLine();
 
@@ -34,16 +33,16 @@ namespace MathGame
                         Helpers.PrintGames();
                         break;
                     case "a":
-                        gamesClass.AdditionGame("Addition game");
+                        gameEngine.AdditionGame("Addition game");
                         break;
                     case "s":
-                        gamesClass.SubtractionGame("Subtraction game");
+                        gameEngine.SubtractionGame("Subtraction game");
                         break;
                     case "m":
-                        gamesClass.MultiplicationGame("Multiplication game");
+                        gameEngine.MultiplicationGame("Multiplication game");
                         break;
                     case "d":
-                        gamesClass.DivisionGame("Division game");
+                        gameEngine.DivisionGame("Division game");
                         break;
                     case "q":
                         Console.WriteLine("Goodbye");
@@ -56,7 +55,7 @@ namespace MathGame
             } while (isGameOn);
         }
 
-        string GetName()
+        internal string GetName()
         {
             Console.WriteLine("Please type your name");
             var name = Console.ReadLine();
