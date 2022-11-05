@@ -5,7 +5,7 @@ DateTime date = DateTime.Now;
 
 List<string> games = new List<string>();
 
-string name = GetName();
+string name = menu.GetName();
 
 
 

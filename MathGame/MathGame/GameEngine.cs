@@ -12,12 +12,12 @@ namespace MathGame
                 Console.Clear();
                 Console.WriteLine(message);
 
-                var divisionNumbers = Helpers.GetDivisionNumbers();
-                var firstNumber = divisionNumbers[0];
-                var secondNumber = divisionNumbers[1];
+                int[] divisionNumbers = Helpers.GetDivisionNumbers();
+                int firstNumber = divisionNumbers[0];
+                int secondNumber = divisionNumbers[1];
 
                 Console.WriteLine($"{firstNumber} / {secondNumber}");
-                var result = Console.ReadLine();
+                string result = Console.ReadLine();
 
                 if (int.Parse(result) == firstNumber / secondNumber)
                 {
