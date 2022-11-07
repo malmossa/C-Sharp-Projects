@@ -6,14 +6,24 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            double x = 3.99;
-            double y = 5;
+            Console.Title = "Defence of Consola";
+            Console.WriteLine("What is the target row? ");
+            int row = Convert.ToInt32(Console.ReadLine());
 
-            double z = Math.Max(x, y);
-            double g = Math.Min(x, y);
+            Console.WriteLine("What is the target column? ");
+            int column = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(z);
-            Console.WriteLine(g);
+            Console.WriteLine("Target row: " + row);
+            Console.WriteLine("Target column: " + column);
+            Console.WriteLine("Deploy to:\n");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"({row}, {column - 1})");
+            Console.WriteLine($"({row - 1}, {column})");
+            Console.WriteLine($"({row}, {column + 1})");
+            Console.WriteLine($"({row + 1}, {column})");
+
+            Console.Beep();
 
             Console.ReadKey();
         }
