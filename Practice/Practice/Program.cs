@@ -6,12 +6,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            String a = "true";
-            bool b = Convert.ToBoolean(a);
+            double x = 3.99;
+            double y = 5;
 
-            Console.WriteLine(b);
-            Console.WriteLine(b.GetType());
+            double z = Math.Max(x, y);
+            double g = Math.Min(x, y);
 
+            Console.WriteLine(z);
+            Console.WriteLine(g);
 
             Console.ReadKey();
         }
