@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Transactions;
 
 namespace Practice
 {
@@ -7,17 +6,23 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your name: ");
-            String name = Console.ReadLine();
+            Console.Write("How many rows: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
 
-            while (name == "")
+            Console.Write("How many columns: ");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("What symbol: ");
+            String symbol = Console.ReadLine();
+
+            for (int i = 0; i < rows; i++)
             {
-                Console.Write("You did not enter anything!!");
-                Console.Write("Enter your name: ");
-                name = Console.ReadLine();
+                for (int j = 0; j < columns; j++ )
+                {
+                    Console.Write(symbol);
+                }
+                Console.WriteLine();
             }
-
-            Console.WriteLine("Hello " + name);
 
             Console.ReadKey();
         }
