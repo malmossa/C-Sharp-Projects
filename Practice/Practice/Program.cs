@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 namespace Practice
 {
@@ -6,20 +7,17 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your age: ");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter your name: ");
+            String name = Console.ReadLine();
 
-            if (age > 18)
+            while (name == "")
             {
-                Console.WriteLine("You are now signed up!");
-            } else if (age <= 0)
-            {
-                Console.WriteLine("You have not been born yet!!");
-            } 
-            else
-            {
-                Console.WriteLine("You must be 18+ to sign up!");
+                Console.Write("You did not enter anything!!");
+                Console.Write("Enter your name: ");
+                name = Console.ReadLine();
             }
+
+            Console.WriteLine("Hello " + name);
 
             Console.ReadKey();
         }
