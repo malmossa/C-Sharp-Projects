@@ -6,24 +6,24 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.Title = "Defence of Consola";
-            Console.WriteLine("What is the target row? ");
-            int row = Convert.ToInt32(Console.ReadLine());
+            String fullName = "mansor almossa";
 
-            Console.WriteLine("What is the target column? ");
-            int column = Convert.ToInt32(Console.ReadLine());
+            String phoneNumber = "626-629-4225";
 
-            Console.WriteLine("Target row: " + row);
-            Console.WriteLine("Target column: " + column);
-            Console.WriteLine("Deploy to:\n");
+            // fullName = fullName.ToUpper();
+            // fullName = fullName.ToLower();
+            // Console.WriteLine(fullName);
 
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"({row}, {column - 1})");
-            Console.WriteLine($"({row - 1}, {column})");
-            Console.WriteLine($"({row}, {column + 1})");
-            Console.WriteLine($"({row + 1}, {column})");
+            // phoneNumber = phoneNumber.Replace("-","/");
+            // Console.WriteLine(phoneNumber);
 
-            Console.Beep();
+            // String userName = fullName.Insert(0, "@");
+            // Console.WriteLine(userName);
+
+            // Console.WriteLine(fullName.Length);
+
+            String firstName = fullName.Substring(0, 6);
+            Console.WriteLine(firstName);
 
             Console.ReadKey();
         }
