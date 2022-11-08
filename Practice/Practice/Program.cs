@@ -6,24 +6,20 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            String fullName = "mansor almossa";
+            Console.WriteLine("Please enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
 
-            String phoneNumber = "626-629-4225";
-
-            // fullName = fullName.ToUpper();
-            // fullName = fullName.ToLower();
-            // Console.WriteLine(fullName);
-
-            // phoneNumber = phoneNumber.Replace("-","/");
-            // Console.WriteLine(phoneNumber);
-
-            // String userName = fullName.Insert(0, "@");
-            // Console.WriteLine(userName);
-
-            // Console.WriteLine(fullName.Length);
-
-            String firstName = fullName.Substring(0, 6);
-            Console.WriteLine(firstName);
+            if (age > 18)
+            {
+                Console.WriteLine("You are now signed up!");
+            } else if (age <= 0)
+            {
+                Console.WriteLine("You have not been born yet!!");
+            } 
+            else
+            {
+                Console.WriteLine("You must be 18+ to sign up!");
+            }
 
             Console.ReadKey();
         }
