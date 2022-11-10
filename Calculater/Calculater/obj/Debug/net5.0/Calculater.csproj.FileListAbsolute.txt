@@ -1,0 +1,16 @@
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.exe
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.deps.json
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.runtimeconfig.dev.json
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.dll
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\bin\Debug\net5.0\Calculater.pdb
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.dll
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\refint\Calculater.dll
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.pdb
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\Calculater.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\Calculater\Calculater\obj\Debug\net5.0\ref\Calculater.dll
