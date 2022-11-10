@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.IO;
 
 namespace Practice
@@ -8,25 +9,25 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            int x = 1;
-            int y = 2;
-            int z = 3;
+            double temperature = 20;
+            String message;
 
-            Console.WriteLine(Add(x, y));
-            Console.WriteLine(Add(x, y, z));
+           /* if (temperature >= 15)
+            {
+                message = "It's warm outside!";
+            } else
+            {
+                message = "It's cold outside!";
+            }
+           */
+
+           // this will be the same 
+            message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
+
+            Console.WriteLine(message);
         }
 
-        // this method is setup for 2 numbers
-        static int Add (int x, int y)
-        {  
-            return x + y;
-        }
+       
 
-        // this method is setup for 3 numbers
-        static int Add (int x, int y, int z)
-        {
-            return x + y + z;
-        }
-  
     }
 }
