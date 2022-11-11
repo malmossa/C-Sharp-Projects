@@ -1,7 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.IO;
+
 
 namespace Practice
 {
@@ -9,25 +7,33 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            double temperature = 20;
-            String message;
-
-           /* if (temperature >= 15)
-            {
-                message = "It's warm outside!";
-            } else
-            {
-                message = "It's cold outside!";
-            }
-           */
-
-           // this will be the same 
-            message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
-
-            Console.WriteLine(message);
+            Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella") ;
+            
         }
 
-       
+
+        class Pizza
+        {
+            String bread;
+            String sauce;
+            String cheese;
+            String topping;
+
+            internal Pizza (string bread, string sauce, string cheese, string topping)
+            {
+                this.bread = bread;
+                this.sauce = sauce;
+                this.cheese = cheese;
+                this.topping = topping;
+            }
+
+            internal Pizza(string bread, string sauce, string cheese)
+            {
+                this.bread = bread;
+                this.sauce = sauce;
+                this.cheese = cheese;
+            }
+        }
 
     }
 }
