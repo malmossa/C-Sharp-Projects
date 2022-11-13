@@ -7,29 +7,48 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car[] garage = new Car[3];
+            Car car = new Car();
+            Bicycle bicycle = new Bicycle();
 
-            Car car1 = new Car("Mustang"); 
-            Car car2 = new Car("Corvette"); 
-            Car car3 = new Car("Lambo"); 
+            /* if we need to create an array of different types of objects
+             * we have to fine what they have in common 
+             * and then we can use that as data type
+               so car and bicycle are vehicle */
+            Vehicle[] vehicles = {car, bicycle};
+             
 
-            garage[0] = car1;
-            garage[1] = car2;
-            garage[2] = car3;
-
-            Console.WriteLine(garage[0].model);
-            Console.WriteLine(garage[1].model);
-            Console.WriteLine(garage[2].model);
-        }
-
-        class Car
-        {
-            internal String model;
-
-            internal Car (String model)
+            foreach (Vehicle vehicle in vehicles)
             {
-                this.model = model;
+                vehicle.Go();
             }
+            
         }
+
+    }
+}
+
+// Parent object
+class Vehicle
+{
+    internal virtual void Go()
+    {
+
+    }
+}
+
+// these classes will inherit from the parent class
+class Car : Vehicle
+{
+    internal override void Go()
+    {
+        Console.WriteLine("The car is moving.");
+    }
+}
+
+class Bicycle : Vehicle
+{
+    internal override void Go()
+    {
+        Console.WriteLine("The bicycle is moving.");
     }
 }
