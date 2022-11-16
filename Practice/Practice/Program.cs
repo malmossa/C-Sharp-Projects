@@ -7,48 +7,57 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car car = new Car();
-            Bicycle bicycle = new Bicycle();
+            Rabbit rabbit = new Rabbit();
+            Hawk hawk = new Hawk();
+            Fish fish = new Fish();
 
-            /* if we need to create an array of different types of objects
-             * we have to fine what they have in common 
-             * and then we can use that as data type
-               so car and bicycle are vehicle */
-            Vehicle[] vehicles = {car, bicycle};
-             
+            rabbit.Flee();
+            hawk.Hunt();
+            fish.Flee();
+            fish.Hunt();
 
-            foreach (Vehicle vehicle in vehicles)
+            Console.ReadKey();
+        }
+
+        interface IPrey
+        {
+            void Flee();
+        }
+
+        interface IPredator
+        {
+            void Hunt();
+        }
+
+        class Rabbit : IPrey 
+        {
+            public void Flee()
             {
-                vehicle.Go();
+                Console.WriteLine("The rabbit runs a way!");
             }
-            
+        }
+
+        class Hawk : IPredator
+        {
+            public void Hunt()
+            {
+                Console.WriteLine("The hawk is searching for food!");
+            }
+        }
+
+        class Fish : IPrey, IPredator
+        {
+            public void Flee()
+            {
+                Console.WriteLine("The fish swims away!");
+            }
+
+            public void Hunt()
+            {
+                Console.WriteLine("The fish is searching for smaller fish!");
+            }
         }
 
     }
 }
 
-// Parent object
-class Vehicle
-{
-    internal virtual void Go()
-    {
-
-    }
-}
-
-// these classes will inherit from the parent class
-class Car : Vehicle
-{
-    internal override void Go()
-    {
-        Console.WriteLine("The car is moving.");
-    }
-}
-
-class Bicycle : Vehicle
-{
-    internal override void Go()
-    {
-        Console.WriteLine("The bicycle is moving.");
-    }
-}
