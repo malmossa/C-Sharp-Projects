@@ -8,24 +8,20 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car car = new Car("Porsch");
 
-            Console.WriteLine(car.Model);
-
-            Console.ReadKey();
+            Console.WriteLine((int)StudentID.Mansor);
+            
+            Console.ReadLine();
         }
 
-        class Car
+        enum StudentID
         {
-           public String Model { get; set; }
-
-           public Car(String model)
-            {
-                this.Model = model;
-            }
-
-           
+           Mansor = 100,
+           Mohammed = 101,
+           Nujood = 102
         }
+
+        
     }
 }
 
