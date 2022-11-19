@@ -8,27 +8,23 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car car = new Car(200);
+            Car car = new Car("Porsch");
 
-            car.Speed = 300;
+            Console.WriteLine(car.Model);
 
             Console.ReadKey();
         }
 
         class Car
         {
-            private int speed;
+           public String Model { get; set; }
 
-            public Car(int speed)
+           public Car(String model)
             {
-                Speed = speed;
+                this.Model = model;
             }
 
-            public int Speed
-            {
-                get { return speed; } 
-                set { speed = value; }
-            }
+           
         }
     }
 }
