@@ -1,5 +1,8 @@
-﻿
+﻿using static System.Formats.Asn1.AsnWriter;
+
 DateTime date = DateTime.Now;
+
+List<string> games = new List<string>();
 
 string name = GetName();
 Menu(name);
@@ -15,6 +18,7 @@ void Menu(string name)
         
         Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}. This is your math game.\n");
         Console.WriteLine(@$"What game would you like to play today? Choose fromthe options below:
+        V - View Previous Games.
         A - Addition.
         S - Subtraction.
         M - Multiplication.
@@ -27,6 +31,9 @@ void Menu(string name)
 
         switch(gameSelected.Trim().ToLower())
         {
+            case "v":
+                GetGames();
+                break;
             case "a":
                 AdditionGame("Addition game.");
                 break;
@@ -77,6 +84,9 @@ void AdditionGame(string message)
             Console.WriteLine("Your answer was incorrect!");
         }
     }
+
+    AddToHistory("Addition", score);
+
     Console.WriteLine();
     Console.WriteLine($"GAME OVER, your final score is {score}. Press any key to go back to the main menu");
     Console.ReadLine();
@@ -109,9 +119,13 @@ void SubtractionGame(string message)
             Console.WriteLine("Your answer was incorrect!");
         }
     }
+    AddToHistory("Subtraction", score);
+
     Console.WriteLine();
-    Console.WriteLine($"GAME OVER, you got {score} correct");
+    Console.WriteLine($"GAME OVER, your final score is {score}. Press any key to go back to the main menu");
+    Console.ReadLine();
 }
+
 
 void MultiplicationGame(string message)
 {
@@ -140,9 +154,13 @@ void MultiplicationGame(string message)
             Console.WriteLine("Your answer was incorrect!");
         }
     }
+    AddToHistory("Multiplication", score);
+
     Console.WriteLine();
-    Console.WriteLine($"GAME OVER, you got {score} correct");
+    Console.WriteLine($"GAME OVER, your final score is {score}. Press any key to go back to the main menu");
+    Console.ReadLine();
 }
+
 
 void DivisionGame(string message)
 {
@@ -168,9 +186,13 @@ void DivisionGame(string message)
             Console.WriteLine("Your answer was incorrect!");
         }
     }
+    AddToHistory("Division", score);
+
     Console.WriteLine();
-    Console.WriteLine($"GAME OVER, you got {score} correct");
+    Console.WriteLine($"GAME OVER, your final score is {score}. Press any key to go back to the main menu");
+    Console.ReadLine();
 }
+
 
 
 string GetName()
@@ -198,6 +220,27 @@ int[] GetDivisionNumbers()
     result[1] = secondNumber;
 
     return result;
+}
+
+void GetGames()
+{
+    Console.Clear();
+    Console.WriteLine("Games History");
+    Console.WriteLine("---------------");
+
+    foreach (string game in games)
+    {
+        Console.WriteLine(game);
+    }
+
+    Console.WriteLine("---------------");
+    Console.WriteLine("Press any key to retirm to main Menu");
+    Console.ReadLine();
+}
+
+void AddToHistory(string gameType, int gameScore)
+{
+    games.Add($"{DateTime.Now} - {gameType}: Score = {gameScore}");
 }
 
 
