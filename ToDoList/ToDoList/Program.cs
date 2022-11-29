@@ -1,29 +1,56 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ToDoList 
+namespace ToDoList
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            DateTime date = DateTime.Now;
-
-            Console.Title = "To Do List";
+            Console.Title = "TO DO LIST";
             Console.ForegroundColor= ConsoleColor.White;
 
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("         TO DO LIST           ");
-            Console.WriteLine("------------------------------");
+            DateTime date= DateTime.Now;
 
-            Console.WriteLine("\nWhat is you name? ");
+            List<string> todos = new List<string>();
+
+            bool addOrRemove = true;
+
+            Console.WriteLine("What is you name? ");
             string name = Console.ReadLine();
 
-            Console.WriteLine($"\nHello {name}, today is {date.DayOfWeek} at {date.ToShortTimeString()}. Please choose one of the options below: ");
-            Console.WriteLine($@"
-         V - View to do items.   
-         A - Add to do item.
-         R - Remove to do item.   
-            ");
+            Console.WriteLine($"\nHello {name}. today is {date.DayOfWeek} and the time is {date.Hour}:{date.Minute}\n");
+            Console.WriteLine($@"Please choose from the options below: 
+     V - View todo items.
+     A - Add new todo item.
+     R - Remove a todo item.
+     ");
+            string userChoice = Console.ReadLine();
+
+            switch (userChoice.ToUpper().Trim())
+            {
+                case "V":
+                    Console.WriteLine("V is selected");
+                    break;
+                case "A":
+                    while (addOrRemove)
+                    {
+                        Console.Write("Add new to do item: ");
+                        todos.Add(Console.ReadLine());
+                        Console.WriteLine("your todo item was added..");
+                        Console.WriteLine("Do you want to add more items? y/n");
+                        string answer = Console.ReadLine();
+
+                        if (answer.ToLower().Trim() == "n")
+                        {
+                            addOrRemove = false;
+                        }
+                    }
+                    break;
+                case "R":
+                    Console.WriteLine("R is selected");
+                    break;
+            }
 
 
 
