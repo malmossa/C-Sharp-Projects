@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
+    "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
+    "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
-        "projectName": "ToDoAPI",
-        "projectPath": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj",
+        "projectName": "toDoAPI",
+        "projectPath": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj",
         "packagesPath": "C:\\Users\\malmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\ToDoAPI\\obj\\",
+        "outputPath": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
