@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2L9bEpltB/q2EYMiA35mofJptLJ+kRLCzsLOgxMj2i6fOO6n6w3t+2Yoxf29JX5C5zEoOgQpCWKZwF228Y0sRw==",
+  "dgSpecHash": "Uf8u99SkP3sLDodC8UrIbOP2rV2C6ZJzCXLlYp7RMMwcI0+Ss4K8Iow5VnAbLSYFBoRvr8vefHbPVhTV9OZHsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj",
+  "projectFilePath": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\toDoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malmo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\malmo\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
