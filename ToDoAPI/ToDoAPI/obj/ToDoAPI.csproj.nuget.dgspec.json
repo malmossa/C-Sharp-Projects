@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj": {}
+    "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\toDoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj": {
+    "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\toDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\toDoAPI.csproj",
         "projectName": "toDoAPI",
-        "projectPath": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\toDoAPI.csproj",
+        "projectPath": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\toDoAPI.csproj",
         "packagesPath": "C:\\Users\\malmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malmo\\C-Sharp-Projects\\toDoAPI\\toDoAPI\\obj\\",
+        "outputPath": "C:\\Users\\malmo\\C-Sharp-Projects\\ToDoAPI\\toDoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
