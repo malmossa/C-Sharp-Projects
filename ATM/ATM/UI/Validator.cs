@@ -1,7 +1,7 @@
 ﻿
 namespace ATM.UI
 {
-    public class Validator
+    public static class Validator
     {
 
     }
