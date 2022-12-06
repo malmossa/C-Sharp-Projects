@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\bin\Debug\net6.0\DoLoopsHomework.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\bin\Debug\net6.0\DoLoopsHomework.deps.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\bin\Debug\net6.0\DoLoopsHomework.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\bin\Debug\net6.0\DoLoopsHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\bin\Debug\net6.0\DoLoopsHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\refint\DoLoopsHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\DoLoopsHomework.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DoLoopsHomework\DoLoopsHomework\obj\Debug\net6.0\ref\DoLoopsHomework.dll
