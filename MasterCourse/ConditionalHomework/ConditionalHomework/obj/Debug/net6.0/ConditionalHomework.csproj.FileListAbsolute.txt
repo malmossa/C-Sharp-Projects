@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\bin\Debug\net6.0\ConditionalHomework.exe
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\bin\Debug\net6.0\ConditionalHomework.deps.json
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\bin\Debug\net6.0\ConditionalHomework.runtimeconfig.json
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\bin\Debug\net6.0\ConditionalHomework.dll
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\bin\Debug\net6.0\ConditionalHomework.pdb
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.AssemblyInfo.cs
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.dll
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\refint\ConditionalHomework.dll
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.pdb
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ConditionalHomework.genruntimeconfig.cache
+C:\Users\malmo\C-Plus-Plus\ConditionalHomework\ConditionalHomework\obj\Debug\net6.0\ref\ConditionalHomework.dll
