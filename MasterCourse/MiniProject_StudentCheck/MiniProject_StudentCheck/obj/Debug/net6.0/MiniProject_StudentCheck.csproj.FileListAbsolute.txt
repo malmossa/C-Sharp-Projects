@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\bin\Debug\net6.0\MiniProject_StudentCheck.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\bin\Debug\net6.0\MiniProject_StudentCheck.deps.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\bin\Debug\net6.0\MiniProject_StudentCheck.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\bin\Debug\net6.0\MiniProject_StudentCheck.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\bin\Debug\net6.0\MiniProject_StudentCheck.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\refint\MiniProject_StudentCheck.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\MiniProject_StudentCheck.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\MiniProject_StudentCheck\MiniProject_StudentCheck\obj\Debug\net6.0\ref\MiniProject_StudentCheck.dll
