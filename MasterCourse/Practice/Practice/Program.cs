@@ -1,37 +1,30 @@
 ﻿
-List<string> firstNames = new List<string>();
+Dictionary<string, string> lookup = new Dictionary<string, string>();
 
-// add to the list
-firstNames.Add("Tim");
-firstNames.Add("Sue");
-firstNames.Add("Bob");
-firstNames.Add("Jane");
+lookup["animal"] = "Not a human";
+lookup["fish"] = "Not a human that swims";
+lookup["human"] = "Us";
 
-// access item in the list
-Console.WriteLine(firstNames[0]);
+Console.WriteLine($"The definition of fish is {lookup["fish"]}\n");
 
-Console.WriteLine();
+Dictionary<int, string> students = new Dictionary<int, string>();
 
-// getting the item in the list
-Console.WriteLine(firstNames[firstNames.Count -1]);
+students[1] = "Mansor";
+students[2] = "Mohammed";
+students[3] = "Nujood";
 
-// getting the count of the list
-Console.WriteLine(firstNames.Count);
+Console.WriteLine($"The student with an ID number 3 is: {students[3]}\n");
 
-Console.WriteLine();
+Dictionary<string, int> months = new Dictionary<string, int>();
 
-// list of integer
-List<int> ages = new List<int>();
-ages.Add(10);
-ages.Add(20);
-ages.Add(30);
-ages.Add(40);
+months["January"] = 1;
+months["February"] = 2;
+months["March"] = 3;
 
-// adding to a list from CSV file
-string data = "Corey, Smith, Jones";
-List<string> lastNames = data.Split(',').ToList();
+Console.WriteLine($"The number of January is {months["January"]}");
 
-Console.WriteLine(lastNames[0]);
+
+
 
 
 Console.ReadLine();
