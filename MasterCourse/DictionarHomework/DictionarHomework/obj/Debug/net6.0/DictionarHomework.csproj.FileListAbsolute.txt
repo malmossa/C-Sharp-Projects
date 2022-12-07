@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\bin\Debug\net6.0\DictionarHomework.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\bin\Debug\net6.0\DictionarHomework.deps.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\bin\Debug\net6.0\DictionarHomework.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\bin\Debug\net6.0\DictionarHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\bin\Debug\net6.0\DictionarHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\refint\DictionarHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\DictionarHomework.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\DictionarHomework\DictionarHomework\obj\Debug\net6.0\ref\DictionarHomework.dll
