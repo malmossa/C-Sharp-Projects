@@ -1,49 +1,37 @@
 ﻿
-string[] myArray1 = new string[4];
+List<string> firstNames = new List<string>();
 
-myArray1[0] = "Mansor";
-myArray1[1] = "Fatna";
-myArray1[2] = "Mohammed";
-myArray1[3] = "Nujood";
+// add to the list
+firstNames.Add("Tim");
+firstNames.Add("Sue");
+firstNames.Add("Bob");
+firstNames.Add("Jane");
 
-// reassign
-myArray1[0] = "Bob";
-
-Console.WriteLine($"Name: {myArray1[0]}");
-Console.WriteLine($"Name: {myArray1[1]}");
-Console.WriteLine($"Name: {myArray1[2]}");
-Console.WriteLine($"Name: {myArray1[3]}");
+// access item in the list
+Console.WriteLine(firstNames[0]);
 
 Console.WriteLine();
-// adding data to the array from a line in a CSV file
-string data = "Tim,Sue,Bob,Jane,Frank";
-string[] myArray2 = data.Split(',');
 
-Console.WriteLine($"Name: {myArray2[0]}");
-Console.WriteLine($"Name: {myArray2[1]}");
-Console.WriteLine($"Name: {myArray2[2]}");
-Console.WriteLine($"Name: {myArray2[3]}");
+// getting the item in the list
+Console.WriteLine(firstNames[firstNames.Count -1]);
+
+// getting the count of the list
+Console.WriteLine(firstNames.Count);
 
 Console.WriteLine();
-// another way to declare an array
-string[] myArray3 = { "item 1", "item 2", "item 3", "item 4"};
 
-Console.WriteLine($"Name: {myArray3[0]}");
-Console.WriteLine($"Name: {myArray3[1]}");
-Console.WriteLine($"Name: {myArray3[2]}");
-Console.WriteLine($"Name: {myArray3[3]}");
+// list of integer
+List<int> ages = new List<int>();
+ages.Add(10);
+ages.Add(20);
+ages.Add(30);
+ages.Add(40);
 
-Console.WriteLine();
-// int array
-int[] myArray4 = { 1, 2, 3, 4 };
+// adding to a list from CSV file
+string data = "Corey, Smith, Jones";
+List<string> lastNames = data.Split(',').ToList();
 
-Console.WriteLine($"Number: {myArray4[0]}");
-Console.WriteLine($"Number: {myArray4[1]}");
-Console.WriteLine($"Number: {myArray4[2]}");
-Console.WriteLine($"Number: {myArray4[3]}");
+Console.WriteLine(lastNames[0]);
 
-Console.WriteLine();
-// print the length of the array
-Console.WriteLine($"the lenght is: {myArray2.Length}");
 
 Console.ReadLine();
