@@ -8,9 +8,9 @@ Console.WriteLine("Can you provide a list of first names seperated with a , :");
 
 List<string> firstNames = Console.ReadLine().Split(',').ToList();
 
-foreach (string name in firstNames)
+for (int i = 0; i < firstNames.Count; i++)
 {
-    Console.WriteLine($"Hello {name}");
+    Console.WriteLine($"Hello {firstNames[i]}");
 }
 
 

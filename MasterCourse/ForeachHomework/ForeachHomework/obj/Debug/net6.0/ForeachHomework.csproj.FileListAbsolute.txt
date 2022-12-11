@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\bin\Debug\net6.0\ForeachHomework.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\bin\Debug\net6.0\ForeachHomework.deps.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\bin\Debug\net6.0\ForeachHomework.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\bin\Debug\net6.0\ForeachHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\bin\Debug\net6.0\ForeachHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\refint\ForeachHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ForeachHomework.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForeachHomework\ForeachHomework\obj\Debug\net6.0\ref\ForeachHomework.dll
