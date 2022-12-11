@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\bin\Debug\net6.0\ForLoopHomework.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\bin\Debug\net6.0\ForLoopHomework.deps.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\bin\Debug\net6.0\ForLoopHomework.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\bin\Debug\net6.0\ForLoopHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\bin\Debug\net6.0\ForLoopHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\refint\ForLoopHomework.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ForLoopHomework.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ForLoopHomework\ForLoopHomework\obj\Debug\net6.0\ref\ForLoopHomework.dll
