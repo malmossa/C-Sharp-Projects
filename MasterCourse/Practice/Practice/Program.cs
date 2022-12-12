@@ -1,15 +1,6 @@
-﻿
-List<string> firstNames = new List<string>();
-firstNames.Add("Mansor");
-firstNames.Add("Fatna");
-firstNames.Add("Mohammed");
-firstNames.Add("Nujood");
+﻿using Practice;
 
-foreach (string firstName in firstNames)
-{
-    Console.WriteLine(firstName);
-}
-
+SampleMethods.SayHi();
 
 Console.ReadLine();
 
