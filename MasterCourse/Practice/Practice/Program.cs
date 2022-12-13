@@ -1,11 +1,11 @@
 ﻿using Practice;
 
-Console.Write("What is your name? ");
-string name = Console.ReadLine();
 
-SampleMethods.SayHi(name);
+(string, string) fullName =  Greeting.GetUserFullName();
 
-MathShotcuts.Add(1.99, 3.00);
+Console.WriteLine(fullName);
+
+Console.WriteLine($"{fullName.Item1} {fullName.Item2}");
 
 Console.ReadLine();
 
