@@ -3,14 +3,7 @@
    Keep track of how many people are at the party.
    At the end, print out the guest list and the total number of guests.*/
 
-using GuestBook;
 
-
-Console.WriteLine("*************************");
-Console.WriteLine("*      Guest Book       *");
-Console.WriteLine("*************************");
-
-GuestList.GetGuestNamesAndNumbers();
 
 
 Console.ReadLine();

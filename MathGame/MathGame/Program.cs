@@ -18,10 +18,6 @@ string GetName()
 
 
 
-
-
-
-
-
-
 Console.ReadLine();
+
+
