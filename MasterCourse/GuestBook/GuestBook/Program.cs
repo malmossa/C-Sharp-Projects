@@ -5,21 +5,14 @@
 
 using GuestBook;
 
-int totalGuests = 0;
-string continueLooping;
 
 GuestLogic.WelcomeMessage();
+var (guests, totalGuests) = GuestLogic.GetAllGuests();
 
-do
-{
-	string partyName = GuestLogic.GetPartyName();
+GuestLogic.DisplayGuests(guests);
 
-	totalGuests += GuestLogic.GetPartySize();
+GuestLogic.DisplayGuestCount(totalGuests);
 
-	Console.Write("Are there more guests coming (yes/no): ");
-	continueLooping= Console.ReadLine();
-
-} while (continueLooping.ToLower() == "yes");
 
 
 
