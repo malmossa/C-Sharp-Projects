@@ -1,11 +1,13 @@
-﻿using Practice;
+﻿
 
-
-(string, string) fullName =  Greeting.GetUserFullName();
-
-Console.WriteLine(fullName);
-
-Console.WriteLine($"{fullName.Item1} {fullName.Item2}");
+for (int i = 0; i < 20; i++)
+{
+	Console.WriteLine($"This is the value of i: {i}");
+	for (int j = 0; j < 10; j++)
+	{
+		Console.WriteLine($"This is the value of j: {j}");
+	}
+}
 
 Console.ReadLine();
 
