@@ -1,15 +1,28 @@
 ﻿
-
-for (int i = 0; i < 20; i++)
+namespace Practice
 {
-	Console.WriteLine($"This is the value of i: {i}");
-	for (int j = 0; j < 10; j++)
-	{
-		Console.WriteLine($"This is the value of j: {j}");
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("What is your first name: ");
+            string firstName = Console.ReadLine();
+            
+            UserMessages.ApplicationStartMessage(firstName);
+
+            double x = RequestData.GetDouble("Enter first number: ");
+            double y = RequestData.GetDouble("Enter second number: ");
+
+            Console.WriteLine(CalculateData.Add(x, y));
+
+
+            Console.ReadLine();
+        }
+
+      
+    }
 }
 
-Console.ReadLine();
 
 
 
