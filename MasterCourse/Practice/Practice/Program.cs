@@ -1,27 +1,37 @@
-﻿
-namespace Practice
+﻿namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("What is your first name: ");
-            string firstName = Console.ReadLine();
+            Console.Write("Enter first number: ");
+            string firstNumberText = Console.ReadLine();
+
+            Console.Write("Enter second number: ");
+            string seconNumberText = Console.ReadLine();
+
+            int number1 = int.Parse(firstNumberText);
+            int number2 = int.Parse(seconNumberText);
+
+            int add = Calculation.Add(number1, number2);
+            int sub = Calculation.Sub(number1, number2);
+            int mul = Calculation.Mul(number1, number2);
             
-            UserMessages.ApplicationStartMessage(firstName);
-
-            double x = RequestData.GetDouble("Enter first number: ");
-            double y = RequestData.GetDouble("Enter second number: ");
-
-            Console.WriteLine(CalculateData.Add(x, y));
-
+            Console.WriteLine(add);
+            Console.WriteLine(sub);
+            Console.WriteLine(mul);
+            
 
             Console.ReadLine();
+
         }
-        // this is a temp comment
-      
     }
 }
+
+
+
+
+
 
 
 
