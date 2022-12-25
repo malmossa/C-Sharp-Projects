@@ -1,29 +1,38 @@
-﻿namespace Practice
+﻿
+
+namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter first number: ");
-            string firstNumberText = Console.ReadLine();
+            // initiate list from the PersonModel class 
+            List<PersonModel> users = new List<PersonModel>();
 
-            Console.Write("Enter second number: ");
-            string seconNumberText = Console.ReadLine();
+            // create user 1 from the PersonModel class
+            PersonModel user = new PersonModel();
+            user.firstName = "Mansor";
+            // add the user to the list
+            users.Add(user);
 
-            int number1 = int.Parse(firstNumberText);
-            int number2 = int.Parse(seconNumberText);
+            // create user 2
+            user = new PersonModel();
+            user.firstName = "Nujood";
+            // add to the list
+            users.Add(user);
 
-            int add = Calculation.Add(number1, number2);
-            int sub = Calculation.Sub(number1, number2);
-            int mul = Calculation.Mul(number1, number2);
+            // print out the list items
+            foreach (PersonModel u in users)
+            {
+                Console.WriteLine(u.firstName);
+            }
+
+
             
-            Console.WriteLine(add);
-            Console.WriteLine(sub);
-            Console.WriteLine(mul);
-            
+
+
 
             Console.ReadLine();
-
         }
     }
 }
