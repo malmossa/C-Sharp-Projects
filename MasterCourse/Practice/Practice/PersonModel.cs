@@ -7,11 +7,9 @@ namespace Practice
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-
         // use of full properties, we use this if we neet to add some logic
         private int _age;
         private string _ssn;
-
         public int Age
         {
             get
