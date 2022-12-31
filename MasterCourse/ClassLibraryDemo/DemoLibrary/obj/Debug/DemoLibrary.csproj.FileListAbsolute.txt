@@ -1,0 +1,6 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\bin\Debug\DemoLibrary.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\bin\Debug\DemoLibrary.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\obj\Debug\DemoLibrary.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\obj\Debug\DemoLibrary.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\ClassLibraryDemo\DemoLibrary\obj\Debug\DemoLibrary.pdb
