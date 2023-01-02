@@ -16,11 +16,13 @@ namespace Practice
             {
                 for (int j = 0; j < n; j++)
                 {
-                    for (int k = 0; k < n; k++)
-                    {
-                        Console.WriteLine($"{i}, {j}, {k}");
-                    }
+                    Console.WriteLine($"{i} : {j}");
                 }
+            }
+
+            for (int k = 0; k < n; k++)
+            {
+                Console.WriteLine(k);
             }
         }
     }
