@@ -1,0 +1,6 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\bin\Debug\GuestBookLibrary.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\bin\Debug\GuestBookLibrary.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\obj\Debug\GuestBookLibrary.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\obj\Debug\GuestBookLibrary.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\obj\Debug\GuestBookLibrary.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\GuestBookLibrary\obj\Debug\GuestBookLibrary.pdb

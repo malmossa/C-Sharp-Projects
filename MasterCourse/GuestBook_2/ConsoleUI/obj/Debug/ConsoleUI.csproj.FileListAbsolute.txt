@@ -1,0 +1,11 @@
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\bin\Debug\GuestBookLibrary.dll
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\bin\Debug\GuestBookLibrary.pdb
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\malmo\C-Sharp-Projects\MasterCourse\GuestBook_2\ConsoleUI\obj\Debug\ConsoleUI.pdb
