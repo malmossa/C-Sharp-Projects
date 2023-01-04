@@ -6,24 +6,12 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            displayItems(10);
-
-            Console.ReadLine();
+            addItems(10);
         }
-        public static void displayItems(int n)
-        {
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    Console.WriteLine($"{i} : {j}");
-                }
-            }
 
-            for (int k = 0; k < n; k++)
-            {
-                Console.WriteLine(k);
-            }
+        public static int addItems(int n)
+        {
+            return n + n + n;
         }
     }
 }
