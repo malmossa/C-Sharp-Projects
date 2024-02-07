@@ -1,54 +1,102 @@
 ﻿
-Console.WriteLine("******************************");
-Console.WriteLine("***** CONSOLE CALCULATOR *****");
-Console.WriteLine("******************************");
 
-double number1 = 0;
-double number2 = 0;
-
-Console.WriteLine("Type a number, and then press enter");
-number1 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Type another number, and then press enter");
-number2 = Convert.ToDouble(Console.ReadLine()); 
-
-Console.WriteLine();
-
-Console.WriteLine("Choose an option from the folloing list:");
-Console.WriteLine("\ta - Add");
-Console.WriteLine("\ts - Subtract");
-Console.WriteLine("\tm - Multiply");
-Console.WriteLine("\td - Divide");
-
-Console.WriteLine();
-
-Console.Write("Your option? ");
-
-switch (Console.ReadLine())
+namespace Calculator
 {
-    case "a":
-        Console.WriteLine($"Your result: {number1} + {number2} = {number1 + number2} ");
-        break;
-
-    case "s":
-        Console.WriteLine($"Your result: {number1} - {number2} =  {number1 - number2} ");
-        break;
-    case "m":
-        Console.WriteLine($"Your result: {number1} * {number2} = {number1 * number2} ");
-        break;
-    case "d":
-        while (number2 == 0)
+    class Program
+    {
+        static void Main(string[] args)
         {
-            Console.WriteLine("Enter a non-zero divisor: ");
-            number2 = Convert.ToInt32(Console.ReadLine());
+            bool endApp = false;
+
+            Console.WriteLine("******************************");
+            Console.WriteLine("***** CONSOLE CALCULATOR *****");
+            Console.WriteLine("******************************");
+
+            while (!endApp)
+            {
+                string numberInput1 = "";
+                string numberInput2 = "";
+
+                double result = 0;
+
+                Console.Write("Type a number, thenpress Enter: ");
+                numberInput1 = Console.ReadLine();
+
+                double cleanNumber1 = 0;
+
+                while (!double.TryParse(numberInput1, out cleanNumber1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numberInput1 = Console.ReadLine();
+                }
+
+                Console.Write("Type another number, thenpress Enter: ");
+                numberInput2 = Console.ReadLine();
+
+                double cleanNumber2 = 0;
+
+                while (!double.TryParse(numberInput2, out cleanNumber2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numberInput2 = Console.ReadLine();
+                }
+
+                Console.WriteLine("Choose an operator from the following list: ");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string operation = Console.ReadLine();
+
+                try
+                {
+                    result = CalculatorLibrary.Calculator.DoOperation(cleanNumber1, cleanNumber2, operation);
+
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error. \n ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Your result: {0:0.#}\n", result);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math. \n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("---------------------------------\n");
+
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n");
+
+
+            }
+
+            return;
+
+
+
+            Console.ReadLine();
+
         }
-        Console.WriteLine($"Your result: {number1} / {number2} = {number1 / number2} ");
-        break;
+    }
 }
-
-Console.WriteLine();
-
-Console.WriteLine("Press any key to close the Calculator console app ...");
+    
 
 
-Console.ReadKey();
+
+
+
+
+
+
+
+
+
