@@ -1,0 +1,15 @@
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\bin\Debug\net8.0\MarysCandyShop.exe
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\bin\Debug\net8.0\MarysCandyShop.deps.json
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\bin\Debug\net8.0\MarysCandyShop.runtimeconfig.json
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\bin\Debug\net8.0\MarysCandyShop.dll
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\bin\Debug\net8.0\MarysCandyShop.pdb
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.AssemblyInfoInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.AssemblyInfo.cs
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.csproj.CoreCompileInputs.cache
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.sourcelink.json
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.dll
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\refint\MarysCandyShop.dll
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.pdb
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\MarysCandyShop.genruntimeconfig.cache
+C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\obj\Debug\net8.0\ref\MarysCandyShop.dll
