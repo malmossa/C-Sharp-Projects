@@ -1,41 +1,83 @@
 ﻿
-string title = "Mary's Candy Shop";
-string divide = "--------------------------------------";
-DateTime dateTime = DateTime.Now;
-int daysSinceOpening = 1;
-decimal todaysProfit = 5.5m;
-bool targetAchieved = false;
-string menu = @$"Choose one option:
- 'V' to view products.
- 'A' to add products.
- 'D' to delete products.
- 'U' to update products.";
-
-Console.WriteLine(title);
-Console.WriteLine(divide);
-Console.WriteLine($"Today's date: {dateTime}");
-Console.WriteLine($"Days since opening: {daysSinceOpening}");
-Console.WriteLine($"Today's profit: {todaysProfit} $");
-Console.WriteLine($"Today's target achieved: {targetAchieved}");
-Console.WriteLine(divide);
-Console.WriteLine(menu);
+PrintHeader();
 
 string usersChoice = Console.ReadLine().Trim().ToUpper();
 
 switch(usersChoice)
 {
     case "A":
-        Console.WriteLine("User chose A");
+        AddProduct("User chose A");
         break;
     case "D":
-        Console.WriteLine("User chose D");
+        DeleteProduct("User chose D");
         break;
     case "V":
-        Console.WriteLine("User chose V");
+        ViewProducts("User chose V");
         break;
     case "U":
-        Console.WriteLine("User chose U");
+        UpdateProduct("User chose U");
         break;
+    default: 
+        Console.WriteLine("Invalid choice, Please choose one of the above");
+        break;
+}
+
+void AddProduct(string message)
+{
+    Console.WriteLine(message);
+}
+
+void DeleteProduct(string message)
+{
+    Console.WriteLine(message);
+}
+
+void UpdateProduct(string message)
+{
+    Console.WriteLine(message);
+}
+
+void ViewProducts(string message)
+{
+    Console.WriteLine(message);
+}
+
+string GetMenu()
+{
+    return @$"Choose one option:
+ 'V' to view products.
+ 'A' to add products.
+ 'D' to delete products.
+ 'U' to update products.";
+}
+
+int GetDaysSinceOpening ()
+{
+    DateTime openingDate = new DateTime(2024, 1, 1);
+    TimeSpan timeDifference = DateTime.Now - openingDate;
+
+    return timeDifference.Days;
+}
+
+
+void PrintHeader()
+{
+    string title = "Mary's Candy Shop";
+    string divide = "--------------------------------------";
+    DateTime dateTime = DateTime.Now;
+    int daysSinceOpening = GetDaysSinceOpening();
+    decimal todaysProfit = 5.5m;
+    bool targetAchieved = false;
+    string menu = GetMenu();
+
+    Console.WriteLine(title);
+    Console.WriteLine(divide);
+    Console.WriteLine($"Today's date: {dateTime}");
+    Console.WriteLine($"Days since opening: {daysSinceOpening}");
+    Console.WriteLine($"Today's profit: ${todaysProfit}");
+    Console.WriteLine($"Today's target achieved: {targetAchieved}");
+    Console.WriteLine(divide);
+    Console.WriteLine(menu);
 }
 
 
