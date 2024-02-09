@@ -4,10 +4,16 @@ string[] candyNames = { "Rainbow Lollipops", "Cotten Candy Clouds", "Choco-Caram
                         "Minty Chocolate Truffles", "Jellybean Jamboree", "Fruity Taffy Twists", "Sour Patch Surprise", 
                         "Crispy Peanut Butter Cups", "Rock Candy Crystals"};
 
-List<string> products = new List<string>();
-SeedData();
+Dictionary<int, string> products = new Dictionary<int, string>();
 
 string divide = "--------------------------------------";
+
+//SeedData();
+
+if (File.Exists(docPath))
+{
+    LoadData();
+}
 
 bool isMenuRunning = true;
 
@@ -52,14 +58,15 @@ void SeedData()
 {
     for(int i = 0; i < candyNames.Length; i++)
     {
-        products.Add(candyNames[i]);
+        products.Add(i, candyNames[i]);
     }
 }
 void AddProduct()
 {
     Console.WriteLine("Product name: ");
     string product = Console.ReadLine();
-    products.Add(product);
+    int index = products.Count();
+    products.Add(index, product.Trim());
 }
 
 void DeleteProduct(string message)
@@ -120,15 +127,50 @@ void PrintHeader()
 
 void SaveProducts()
 {
-    using(StreamWriter outputFile = new StreamWriter(docPath))
+    try
     {
-        foreach(string product in products)
+        using(StreamWriter outputFile = new StreamWriter(docPath))
         {
-            outputFile.WriteLine(product);
+            foreach(KeyValuePair<int, string> product in products)
+            {
+                outputFile.WriteLine($"{product.Key}, {product.Value}");
+            }
         }
+        Console.WriteLine("Products saved");
+
+    } catch (Exception e)
+    {
+        Console.WriteLine("There was an error saving products: " + e.Message);
     }
-    Console.WriteLine("Products saved");
 }
+
+
+
+void LoadData()
+{
+    try
+    {
+        using (StreamReader reader = new StreamReader(docPath))
+        {
+            string line = reader.ReadLine();
+
+            while (line != null)
+            {
+                string[] parts = line.Split(',');
+                products.Add(int.Parse(parts[0]), parts[1]);
+                line = reader.ReadLine();
+            }
+        }
+
+    } catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+        Console.WriteLine(divide);
+    }
+}
+
+
+
 
 Console.ReadLine();
 
