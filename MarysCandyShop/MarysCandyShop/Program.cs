@@ -1,31 +1,64 @@
-﻿
-PrintHeader();
+﻿string docPath = @"C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\history.txt";
 
-string usersChoice = Console.ReadLine().Trim().ToUpper();
+string[] candyNames = { "Rainbow Lollipops", "Cotton Candy Clouds", "Choco-Caramel Delights", "Gummy Bear Bonanza",
+    "Minty Chocolate Truffles", "Jellybean Jamboree", "Fruity Taffy Twists", "Sour Patch Surprise",
+    "Crispy Peanut Butter Cups", "Rock Candy Crystals"};
 
-switch(usersChoice)
+bool isMenuRunning = true;
+List<string> products = new List<string>();
+SeedData();
+
+while(isMenuRunning)
 {
-    case "A":
-        AddProduct("User chose A");
-        break;
-    case "D":
-        DeleteProduct("User chose D");
-        break;
-    case "V":
-        ViewProducts("User chose V");
-        break;
-    case "U":
-        UpdateProduct("User chose U");
-        break;
-    default:
-        Console.WriteLine("Invalid choice. Please choose one of the above.");
-        break;
+    PrintHeader();
+
+    string usersChoice = Console.ReadLine().Trim().ToUpper();
+    string menuMessage = "Press Any Key To Go Back to Menu";
+
+    switch (usersChoice)
+    {
+        case "A":
+            AddProduct();
+            break;
+        case "D":
+            DeleteProduct("User chose D");
+            break;
+        case "V":
+            ViewProducts("User chose V");
+            break;
+        case "U":
+            UpdateProduct("User chose U");
+            break;
+        case "Q":
+            menuMessage = "Goodbye";
+            SaveProducts();
+            isMenuRunning = false;
+            break;
+        default:
+            Console.WriteLine("Invalid choice. Please choose one of the above.");
+            break;
+    }
+
+    Console.WriteLine(menuMessage);
+    Console.ReadLine();
+    Console.Clear();
+}
+
+void SeedData()
+{
+    for (int i = 0; i < candyNames.Length; i++)
+    {
+        products.Add(candyNames[i]);
+    }
 }
 
 
-void AddProduct(string message)
+
+void AddProduct()
 {
-    Console.WriteLine(message);
+    Console.WriteLine("Product name:");
+    string product = Console.ReadLine();
+    products.Add(product);
 }
 
 void DeleteProduct(string message)
@@ -68,7 +101,8 @@ string GetMenu()
 'V' to view products.
 'A' to add product.
 'D' to delete product.
-'U' to update product.";
+'U' to update product.
+'Q' to quit the program" ;
 }
 
 int GetDaysSinceOpening()
@@ -79,6 +113,18 @@ int GetDaysSinceOpening()
     return timeDifference.Days;
 }
 
+
+void SaveProducts()
+{
+    using(StreamWriter outputFile = new StreamWriter(docPath))
+    {
+        foreach (var product in products)
+        {
+            outputFile.WriteLine(product);
+        }
+    }
+    Console.WriteLine("Products saved");
+}
 
 
 Console.ReadLine();
