@@ -130,28 +130,43 @@ int GetDaysSinceOpening()
 
 void SaveProducts()
 {
-    using(StreamWriter outputFile = new StreamWriter(docPath))
+    try
     {
-        foreach (KeyValuePair<int, string> product in products)
+        using(StreamWriter outputFile = new StreamWriter(docPath))
         {
-            outputFile.WriteLine($"{product.Key}, {product.Value}");
+            foreach (KeyValuePair<int, string> product in products)
+            {
+                outputFile.WriteLine($"{product.Key}, {product.Value}");
+            }
         }
+        Console.WriteLine("Products saved");
+
+    } catch (Exception ex)
+    {
+        Console.WriteLine($"There was an error saving products: {ex.Message}");
     }
-    Console.WriteLine("Products saved");
 }
 
 void LoadData()
 {
-    using (StreamReader reader = new StreamReader(docPath))
+    try
     {
-        string line = reader.ReadLine();
-
-        while(line != null)
+        using (StreamReader reader = new StreamReader(docPath))
         {
-            string[] parts = line.Split(',');
-            products.Add(int.Parse(parts[0]), parts[1]);
-            line = reader.ReadLine();
+            string line = reader.ReadLine();
+
+            while(line != null)
+            {
+                string[] parts = line.Split(',');
+                products.Add(int.Parse(parts[0]), parts[1]);
+                line = reader.ReadLine();
+            }
         }
+
+    } catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+        Console.WriteLine(divide);
     }
 }
 
