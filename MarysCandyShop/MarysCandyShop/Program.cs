@@ -4,9 +4,19 @@ string[] candyNames = { "Rainbow Lollipops", "Cotton Candy Clouds", "Choco-Caram
     "Minty Chocolate Truffles", "Jellybean Jamboree", "Fruity Taffy Twists", "Sour Patch Surprise",
     "Crispy Peanut Butter Cups", "Rock Candy Crystals"};
 
+Dictionary<int, string> products = new Dictionary<int, string>();
+
+string divide = "-------------------------------";
+
+//SeedData();
+
+if (File.Exists(docPath))
+{
+    LoadData();
+}
+
+
 bool isMenuRunning = true;
-List<string> products = new List<string>();
-SeedData();
 
 while(isMenuRunning)
 {
@@ -24,7 +34,7 @@ while(isMenuRunning)
             DeleteProduct("User chose D");
             break;
         case "V":
-            ViewProducts("User chose V");
+            ViewProducts();
             break;
         case "U":
             UpdateProduct("User chose U");
@@ -44,21 +54,20 @@ while(isMenuRunning)
     Console.Clear();
 }
 
-void SeedData()
-{
-    for (int i = 0; i < candyNames.Length; i++)
-    {
-        products.Add(candyNames[i]);
-    }
-}
-
-
+//void SeedData()
+//{
+//    for (int i = 0; i < candyNames.Length; i++)
+//    {
+//        products.Add(i, candyNames[i]);
+//    }
+//}
 
 void AddProduct()
 {
     Console.WriteLine("Product name:");
     string product = Console.ReadLine();
-    products.Add(product);
+    var index = products.Count();
+    products.Add(index ,product.Trim());
 }
 
 void DeleteProduct(string message)
@@ -71,9 +80,14 @@ void UpdateProduct(string message)
     Console.WriteLine(message);
 }
 
-void ViewProducts(string message)
+void ViewProducts()
 {
-    Console.WriteLine(message);
+    Console.WriteLine(divide);
+
+    foreach (KeyValuePair<int, string> product in products)
+    {
+        Console.WriteLine(product);
+    }
 }
 void PrintHeader()
 {
@@ -118,12 +132,27 @@ void SaveProducts()
 {
     using(StreamWriter outputFile = new StreamWriter(docPath))
     {
-        foreach (var product in products)
+        foreach (KeyValuePair<int, string> product in products)
         {
-            outputFile.WriteLine(product);
+            outputFile.WriteLine($"{product.Key}, {product.Value}");
         }
     }
     Console.WriteLine("Products saved");
+}
+
+void LoadData()
+{
+    using (StreamReader reader = new StreamReader(docPath))
+    {
+        string line = reader.ReadLine();
+
+        while(line != null)
+        {
+            string[] parts = line.Split(',');
+            products.Add(int.Parse(parts[0]), parts[1]);
+            line = reader.ReadLine();
+        }
+    }
 }
 
 
