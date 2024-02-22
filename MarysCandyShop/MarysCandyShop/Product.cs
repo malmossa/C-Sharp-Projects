@@ -2,11 +2,15 @@
 {
     internal class Product
     {
-        internal string _name;
+        internal int Id { get; }
+        internal string Name { get; set; }
+        internal decimal Price { get; set; }
 
-        public Product(string name)
+        public Product (int id)
         {
-            _name = name;
+            Id = id;
         }
+        
+        
     }
 }

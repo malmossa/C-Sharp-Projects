@@ -25,7 +25,7 @@
                         productController.DeleteProduct("User chose D");
                         break;
                     case "V":
-                        List<string> products = productController.GetProducts();
+                        List<Product> products = productController.GetProducts();
                         ViewProducts(products);
                         break;
                     case "U":
@@ -48,14 +48,16 @@
             
         }
 
-        internal static void ViewProducts(List<string> products)
+        internal static void ViewProducts(List<Product> products)
         {
             Console.WriteLine(divide);
 
-            foreach (string product in products)
+            foreach (Product product in products)
             {
-                Console.WriteLine(product);
+                Console.WriteLine($"{product.Id}, {product.Name}, {product.Price}");
             }
+
+            Console.WriteLine(divide);
         }
         internal static void PrintHeader()
         {
