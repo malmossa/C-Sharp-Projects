@@ -2,20 +2,26 @@
 {
     internal class ProductsController
     {
-        internal List<string>GetProducts()
+        internal List<Product>GetProducts()
         {
-            List<string> products = new List<string>();
+            List<Product> products = new List<Product>();
 
             try
             {
-                using (StreamReader reader = new StreamReader(Configuration.docPath))
+                using (StreamReader reader = new(Configuration.docPath))
                 {
                     string line = reader.ReadLine();
 
                     while (line != null)
                     {
                         string[] parts = line.Split(',');
-                        products.Add(line);
+                        Product product = new Product(int.Parse(parts[0]));
+                        product.Name = parts[1];
+                        product.Price = decimal.Parse(parts[2]);
+
+                        products.Add(product);
+
+
                         line = reader.ReadLine();
                     }
                 }
@@ -31,16 +37,21 @@
         }
         internal void AddProduct()
         {
+            int id = GetProducts().Count;
+
             Console.WriteLine("Product name:");
-            string product = Console.ReadLine();
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Product price:");
+            decimal price = decimal.Parse(Console.ReadLine());
 
             try
             {
-                using (StreamWriter outputFile = new StreamWriter(Configuration.docPath))
+                using (StreamWriter outputFile = new StreamWriter(Configuration.docPath, true))
                 {
-                   outputFile.WriteLine(product.Trim(), true);   
+                   outputFile.WriteLine($"{id}, {name}, {price}");   
                 }
-                Console.WriteLine("Products saved");
+                Console.WriteLine("Product saved");
 
             }
             catch (Exception ex)
@@ -49,15 +60,15 @@
             }
         }
 
-        internal void AddProducts(List<string> products)
+        internal void AddProducts(List<Product> products)
         {         
             try
             {
                 using (StreamWriter outputFile = new StreamWriter(Configuration.docPath))
                 {
-                    foreach (string product in products)
+                    foreach (Product product in products)
                     {
-                        outputFile.WriteLine(product.Trim());
+                        outputFile.WriteLine($"{product.Id}, {product.Name}, {product.Price}");
                     }
                 }
                 Console.WriteLine("Products saved");
