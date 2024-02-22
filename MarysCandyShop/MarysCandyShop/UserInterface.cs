@@ -1,91 +1,89 @@
-﻿namespace MarysCandyShop
+﻿namespace MarysCandyShop;
+
+internal static class UserInterface
 {
-    internal static class UserInterface
+    internal const string divide = "---------------------------------";
+
+    internal static void RunMainMenu()
     {
-        internal const string divide = "-------------------------------";
-        internal static void RunMainMenu()
+        var productsController = new ProductsController();
+
+        var isMenuRunning = true;
+
+        while (isMenuRunning)
         {
-            ProductsController productController = new ProductsController();
+            PrintHeader();
 
-            bool isMenuRunning = true;
+            var usersChoice = Console.ReadLine().Trim().ToUpper();
+            var menuMessage = "Press Any Key To Go Back to Menu";
 
-            while (isMenuRunning)
+            switch (usersChoice)
             {
-                PrintHeader();
-
-                string usersChoice = Console.ReadLine().Trim().ToUpper();
-                string menuMessage = "Press Any Key To Go Back to Menu";
-
-                switch (usersChoice)
-                {
-                    case "A":
-                        productController.AddProduct();
-                        break;
-                    case "D":
-                        productController.DeleteProduct("User chose D");
-                        break;
-                    case "V":
-                        List<Product> products = productController.GetProducts();
-                        ViewProducts(products);
-                        break;
-                    case "U":
-                        productController.UpdateProduct("User chose U");
-                        break;
-                    case "Q":
-                        menuMessage = "Goodbye";
-                        isMenuRunning = false;
-                        break;
-                    default:
-                        Console.WriteLine("Invalid choice. Please choose one of the above.");
-                        break;
-                }
-
-                Console.WriteLine(menuMessage);
-                Console.ReadLine();
-                Console.Clear();
+                case "A":
+                    productsController.AddProduct();
+                    break;
+                case "D":
+                    productsController.DeleteProduct("User chose D");
+                    break;
+                case "V":
+                    var products = productsController.GetProducts();
+                    ViewProducts(products);
+                    break;
+                case "U":
+                    productsController.UpdateProduct("User chose U");
+                    break;
+                case "Q":
+                    menuMessage = "Goodbye";
+                    isMenuRunning = false;
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Please choose one of the above");
+                    break;
             }
 
-            
+            Console.WriteLine(menuMessage);
+            Console.ReadLine();
+            Console.Clear();
         }
+    }
 
-        internal static void ViewProducts(List<Product> products)
+    internal static void ViewProducts(List<Product> products)
+    {
+        Console.WriteLine(divide);
+        foreach (var product in products)
         {
-            Console.WriteLine(divide);
-
-            foreach (Product product in products)
-            {
-                Console.WriteLine($"{product.Id}, {product.Name}, {product.Price}");
-            }
-
-            Console.WriteLine(divide);
+            Console.WriteLine($"{product.Id}, {product.Name}, {product.Price}");
         }
-        internal static void PrintHeader()
-        {
-            string title = "Mary's Candy Shop";
-            string divide = "---------------------------------------------";
-            DateTime dateTime = DateTime.Now;
-            int daysSinceOpening = Helpers.GetDaysSinceOpening();
-            decimal todaysProfit = 5.5m;
-            bool targetAchieved = false;
-            string menu = GetMenu();
+        Console.WriteLine(divide);
+    }
 
-            Console.WriteLine(title);
-            Console.WriteLine(divide);
-            Console.WriteLine($"Today's date: {dateTime}");
-            Console.WriteLine($"Days since opening: {daysSinceOpening}");
-            Console.WriteLine($"Today's profit: ${todaysProfit}");
-            Console.WriteLine($"Today's target achieved: {false}");
-            Console.WriteLine(divide);
-            Console.WriteLine(menu);
-        }
-        private static string GetMenu()
-        {
-            return @" Choose one option:
-'V' to view products.
-'A' to add product.
-'D' to delete product.
-'U' to update product.
-'Q' to quit the program";
-        }
+    internal static void PrintHeader()
+    {
+        var title = "Mary's Candy Shop";
+        var divide = "---------------------------------";
+        var dateTime = DateTime.Now;
+        var daysSinceOpening = Helpers.GetDaysSinceOpening();
+        var todaysProfit = 5.5m;
+        var targetAchieved = false;
+        string menu = GetMenu();
+
+        Console.WriteLine(@$"{title}
+{divide}
+Today's date: {dateTime}
+Days since opening: {daysSinceOpening}
+Today's profit: {todaysProfit}$
+Today's target achieved: {targetAchieved}
+{divide}
+{menu}");
+    }
+
+    private static string GetMenu()
+    {
+        return "Choose one option:\n"
+            + 'V' + " to view products\n"
+            + 'A' + " to add product\n"
+            + 'D' + " to delete product\n"
+            + 'U' + " to update product\n"
+            + 'Q' + " to quit the program\n";
     }
 }

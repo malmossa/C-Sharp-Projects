@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\products.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\products.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\products.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\products.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|c:\\users\\malmo\\c-sharp-projects\\maryscandyshop\\maryscandyshop\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D330140D-4BEF-49BA-A736-08A9F67F9915}|MarysCandyShop\\MarysCandyShop.csproj|solutionrelative:maryscandyshop\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,52 +46,78 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Products.txt",
-              "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Products.txt",
-              "RelativeDocumentMoniker": "MarysCandyShop\\Products.txt",
-              "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Products.txt",
-              "RelativeToolTip": "MarysCandyShop\\Products.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Helpers.cs",
+              "RelativeDocumentMoniker": "MarysCandyShop\\Helpers.cs",
+              "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Helpers.cs",
+              "RelativeToolTip": "MarysCandyShop\\Helpers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T21:12:07.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Configuration.cs",
+              "RelativeDocumentMoniker": "MarysCandyShop\\Configuration.cs",
+              "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Configuration.cs",
+              "RelativeToolTip": "MarysCandyShop\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T21:10:23.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "products.txt",
+              "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\products.txt",
+              "RelativeDocumentMoniker": "MarysCandyShop\\products.txt",
+              "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\products.txt",
+              "RelativeToolTip": "MarysCandyShop\\products.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-02-22T17:35:50.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserInterface.cs",
               "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\UserInterface.cs",
               "RelativeDocumentMoniker": "MarysCandyShop\\UserInterface.cs",
               "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\UserInterface.cs",
               "RelativeToolTip": "MarysCandyShop\\UserInterface.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAowFsAAAAAAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAzwFgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T17:33:53.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "DataSeed.cs",
               "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\DataSeed.cs",
               "RelativeDocumentMoniker": "MarysCandyShop\\DataSeed.cs",
               "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\DataSeed.cs",
               "RelativeToolTip": "MarysCandyShop\\DataSeed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T17:21:32.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\ProductsController.cs",
               "RelativeDocumentMoniker": "MarysCandyShop\\ProductsController.cs",
               "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\ProductsController.cs",
               "RelativeToolTip": "MarysCandyShop\\ProductsController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAA1wD4AAAA5AAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAzwFgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T17:13:46.074Z",
               "EditorCaption": ""
@@ -96,20 +130,20 @@
               "RelativeDocumentMoniker": "MarysCandyShop\\Program.cs",
               "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Program.cs",
               "RelativeToolTip": "MarysCandyShop\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T16:43:56.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Product.cs",
               "RelativeDocumentMoniker": "MarysCandyShop\\Product.cs",
               "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MarysCandyShop\\MarysCandyShop\\Product.cs",
               "RelativeToolTip": "MarysCandyShop\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T16:23:34.157Z",
               "EditorCaption": ""

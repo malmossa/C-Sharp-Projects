@@ -1,7 +1,6 @@
-﻿namespace MarysCandyShop
+﻿namespace MarysCandyShop;
+
+internal static class Configuration
 {
-    internal static class Configuration
-    {
-        internal static string docPath = @"C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\products.txt";
-    }
+    internal static string docPath = @"C:\Users\malmo\C-Sharp-Projects\MarysCandyShop\MarysCandyShop\products.txt";
 }

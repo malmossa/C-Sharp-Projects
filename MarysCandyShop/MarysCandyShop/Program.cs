@@ -2,5 +2,4 @@
 
 UserInterface.RunMainMenu();
 
-
-Console.ReadLine();
+Console.WriteLine();
