@@ -71,7 +71,7 @@ internal static class UserInterface
 {divide}
 Today's date: {dateTime}
 Days since opening: {daysSinceOpening}
-Today's profit: {todaysProfit}$
+Today's profit: ${todaysProfit}
 Today's target achieved: {targetAchieved}
 {divide}
 {menu}");

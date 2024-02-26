@@ -40,10 +40,10 @@ internal class ProductsController
         var id = GetProducts().Count;
 
         Console.WriteLine("Product name:");
-        var name = Console.ReadLine();
+        string name = Console.ReadLine();
 
         Console.WriteLine("Product price:");
-        var price = decimal.Parse(Console.ReadLine());
+        decimal price = decimal.Parse(Console.ReadLine());
         try
         {
             using (StreamWriter outputFile = new StreamWriter(Configuration.docPath, true))
