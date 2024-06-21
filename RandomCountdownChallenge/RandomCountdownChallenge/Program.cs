@@ -22,28 +22,35 @@ namespace RandomCountdownChallenge
             Console.Title = "Random Countdown Challenge";
             Console.ForegroundColor = ConsoleColor.White;
             Stopwatch timer = new Stopwatch();
+            
       
             Random random = new Random();
 
-
             int countDownNumber = 100;
+            int numberOfMatch = 0;
+            
 
             timer.Start();
-            for (int i = countDownNumber; i >= 0; i--)
+            while (countDownNumber >= 0)
             {
-                int randomNumber = random.Next(0, 101);
-                if (i == randomNumber)
+                int randomNumber = random.Next(0, 100);
+                                  
+                Console.WriteLine(countDownNumber);
+                countDownNumber--;
+                                          
+                if (randomNumber == countDownNumber)
                 {
-                    countDownNumber = 100;
                     Console.WriteLine("Match.. Starting over");
+                    numberOfMatch++;
+                    countDownNumber = 100;
                 }
-                Console.WriteLine(i);
+
             }
             timer.Stop();
 
             Console.WriteLine();
-            Console.WriteLine($"Time: {timer.ElapsedMilliseconds} Milliseconds.");
-
+            Console.WriteLine($"It took: {timer.ElapsedMilliseconds} milliseconds");
+            Console.WriteLine($"Matches: {numberOfMatch}");
 
             Console.ReadLine();
         }

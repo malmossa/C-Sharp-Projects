@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomCountdownChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a51a668d05d187220ced38082240cc1ded8c3fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fba15fafc0b47c969adf390020f2f69966155b35")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomCountdownChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomCountdownChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
