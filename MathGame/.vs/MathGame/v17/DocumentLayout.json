@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\malmo\\C-Sharp-Projects\\MathGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB25681-B915-43C8-9F2A-16F6230F14FE}|MathGame\\MathGame.csproj|c:\\users\\malmo\\c-sharp-projects\\mathgame\\mathgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB25681-B915-43C8-9F2A-16F6230F14FE}|MathGame\\MathGame.csproj|solutionrelative:mathgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\malmo\\C-Sharp-Projects\\MathGame\\MathGame\\Program.cs",
+              "RelativeDocumentMoniker": "MathGame\\Program.cs",
+              "ToolTip": "C:\\Users\\malmo\\C-Sharp-Projects\\MathGame\\MathGame\\Program.cs",
+              "RelativeToolTip": "MathGame\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA0wCUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T22:11:58.831Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
