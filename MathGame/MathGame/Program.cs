@@ -1,36 +1,18 @@
-﻿Header();
+﻿DateTime date = DateTime.Now;
 
-Console.WriteLine("Please type your name");
-string name = Console.ReadLine();
-DateTime date = DateTime.Now;
+Header();
 
-Menu(name, date);
+string name = GetName();
 
-string gameSelected = Console.ReadLine();
+Menu(name);
 
-switch(gameSelected.Trim().ToUpper())
+string GetName()
 {
-    case "A":
-        AdditionGame("Addition game selected!");
-        break;
-    case "S":
-        Subtraction("Subtraction game selected!");
-        break;
-    case "M":
-        Multiplication("Multiplication game selected!");
-        break;
-    case "D":
-        Division("Division game selected!");
-        break;
-    case "Q":
-        Console.WriteLine("Goodbye");
-        break;
-    default:
-        Console.WriteLine("Invalid Input");
-        break;
+    Console.WriteLine("Please type your name");
+    string name = Console.ReadLine();
+    return name;
 }
-
-void Menu(string name, DateTime date)
+void Menu(string name)
 {
     int militaryTime = Convert.ToInt32(date.Hour.ToString());
 
@@ -44,6 +26,30 @@ M - Multiplication.
 D - Division.
 Q - Quit the program.");
     Console.WriteLine("------------------------------------------------------");
+
+    string gameSelected = Console.ReadLine();
+
+    switch (gameSelected.Trim().ToUpper())
+    {
+        case "A":
+            AdditionGame();
+            break;
+        case "S":
+            Subtraction();
+            break;
+        case "M":
+            Multiplication();
+            break;
+        case "D":
+            Division("Division game selected!");
+            break;
+        case "Q":
+            Console.WriteLine("Goodbye");
+            break;
+        default:
+            Console.WriteLine("Invalid Input");
+            break;
+    }
 
 }
 
@@ -79,25 +85,159 @@ void Header()
  Console.WriteLine("------------------------------------------------------");
 }
 
-void AdditionGame(string message)
+void AdditionGame()
 {
-    Console.WriteLine(message);
+    Random random = new Random();
+    int correctAnswers = 0;
+    int incorrectAnswers = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+        Console.WriteLine($"{firstNumber} + {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber + secondNumber)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Your answer was correct!");
+            Console.ResetColor();
+            correctAnswers++;
+        } else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Your answer was incorrect.");
+            Console.ResetColor();
+            incorrectAnswers++;
+        }
+
+        if (i == 4)
+        {
+            Console.WriteLine("Game over.. your score is:");
+            Console.Write("Correct: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(correctAnswers);
+            Console.ResetColor();
+
+            Console.Write("Incorrect: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(incorrectAnswers);
+            Console.ResetColor();
+        }
+       
+
+    }
+
+
 }
 
-void Subtraction(string message)
+void Subtraction()
 {
-    Console.WriteLine(message);
+    Random random = new Random();
+    int correctAnswers = 0;
+    int incorrectAnswers = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+        Console.WriteLine($"{firstNumber} - {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber - secondNumber)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Your answer was correct!");
+            Console.ResetColor();
+            correctAnswers++;
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Your answer was incorrect.");
+            Console.ResetColor();
+            incorrectAnswers++;
+        }
+
+        if (i == 4)
+        {
+            Console.WriteLine("Game over.. your score is:");
+            Console.Write("Correct: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(correctAnswers);
+            Console.ResetColor();
+
+            Console.Write("Incorrect: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(incorrectAnswers);
+            Console.ResetColor();
+        }
+
+
+    }
 }
 
-void Multiplication(string message)
+void Multiplication()
 {
-    Console.WriteLine(message);
+    Random random = new Random();
+    int correctAnswers = 0;
+    int incorrectAnswers = 0;
+
+    int firstNumber;
+    int secondNumber;
+
+    for (int i = 0; i < 5; i++)
+    {
+        firstNumber = random.Next(1, 9);
+        secondNumber = random.Next(1, 9);
+        Console.WriteLine($"{firstNumber} * {secondNumber}");
+        string result = Console.ReadLine();
+
+        if (int.Parse(result) == firstNumber * secondNumber)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Your answer was correct!");
+            Console.ResetColor();
+            correctAnswers++;
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Your answer was incorrect.");
+            Console.ResetColor();
+            incorrectAnswers++;
+        }
+
+        if (i == 4)
+        {
+            Console.WriteLine("Game over.. your score is:");
+            Console.Write("Correct: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(correctAnswers);
+            Console.ResetColor();
+
+            Console.Write("Incorrect: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(incorrectAnswers);
+            Console.ResetColor();
+        }
+
+
+    }
 }
 
 void Division(string message)
 {
     Console.WriteLine(message);
 }
+
 
 
 Console.ReadLine();
