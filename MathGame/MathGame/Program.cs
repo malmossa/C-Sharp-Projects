@@ -4,6 +4,7 @@ Header();
 
 string name = GetName();
 
+
 Menu(name);
 
 string GetName()
@@ -12,18 +13,17 @@ string GetName()
     string name = Console.ReadLine();
     return name;
 }
+
 void Menu(string name)
 {
-    int militaryTime = Convert.ToInt32(date.Hour.ToString());
-
-    string userGreeting = Greeting(militaryTime);
-    Console.WriteLine($"{userGreeting} {name.ToUpper()}.\n");
-
     bool isGameOn = true;
+
+    // Show the greeting only once
+    Greeting(name);
+
 
     while (isGameOn)
     {
-        Console.Clear();
         Console.WriteLine(@"What game would you like to play? Choose from the option below:
      A - Addition.
      S - Subtraction.
@@ -50,34 +50,36 @@ void Menu(string name)
                 break;
             case "Q":
                 Console.WriteLine($"Goodbye.. {name}");
+                Environment.Exit(0);
                 isGameOn = false;
                 break;
             default:
                 Console.WriteLine("Invalid Input");
                 break;
         }
-    }
+        Console.Clear();
+    } 
 
 }
 
-string Greeting(int hour)
+void Greeting(string name)
 {
+    int hour = Convert.ToInt32(date.Hour.ToString());
 
-    string message = "";
+    
     if (hour > 0 && hour <= 12)
     {
-        message = "Good morning";
+        Console.WriteLine($"Good morning.. {name}");
     }
     else if (hour >= 12 && hour <= 5)
     {
-        message = "Good afternoon";
+        Console.WriteLine($"Good afternoon.. {name}");
     }
     else
     {
-        message = "Good eveing";
+        Console.WriteLine($"Good eveing.. {name}");
     }
 
-    return message; 
 }
 
 void Header()
