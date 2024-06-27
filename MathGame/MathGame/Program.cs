@@ -104,13 +104,32 @@ void AdditionGame(string message)
     int correctAnswers = 0;
     int wrongAnswers = 0;
 
-    int firstNumber;
-    int secondNumber;
+    int firstNumber = 0;
+    int secondNumber = 0;
+
+    string gameLevel = Difficulty();
 
     for (int i = 0; i < 5; i++)
     {
-        firstNumber = random.Next(1, 9);
-        secondNumber = random.Next(1, 9);
+
+        if (gameLevel == "Easy")
+        {
+            firstNumber = random.Next(1, 26);
+            secondNumber = random.Next(1, 26);
+        }
+
+        if (gameLevel == "Medium")
+        {
+            firstNumber = random.Next(1, 51);
+            secondNumber = random.Next(1, 51);
+        }
+
+        if (gameLevel == "Difficult")
+        {
+            firstNumber = random.Next(1, 101);
+            secondNumber = random.Next(1, 101);
+        }
+
         Console.WriteLine($"{firstNumber} + {secondNumber}");
         string result = Console.ReadLine();
 
@@ -148,7 +167,7 @@ void AdditionGame(string message)
 
     }
 
-    AddToHistory(correctAnswers, wrongAnswers, "Addition");
+    AddToHistory(correctAnswers, wrongAnswers, "Addition", gameLevel);
 
 }
 
@@ -353,9 +372,35 @@ void GetGames()
     Console.ReadLine();
 }
 
-void AddToHistory(int correct, int wrong, string gameType)
+void AddToHistory(int correct, int wrong, string gameType, string difficulty)
 {
-    games.Add($"{DateTime.Now} - {gameType} - Correct: {correct} Wrong: {wrong}");
+    games.Add($"{DateTime.Now} - {gameType} - {difficulty} - Correct: {correct} Wrong: {wrong}");
+}
+
+string Difficulty()
+{
+    string difficulty = "";
+
+    Console.WriteLine(@"How difficult you want the game to be? 
+    E - Easy, numbers 1 to 25.
+    M - Medium, numbers 1 to 50.
+    D - Difficult, numbers 1 to 100.");
+
+    string userChoice = Console.ReadLine();
+
+    switch (userChoice.Trim().ToUpper())
+    {
+        case "E":
+            difficulty = "Easy";
+            break;
+        case "M":
+            difficulty = "Medium";
+            break;
+        case "D":
+            difficulty = "Difficult";
+            break;
+    }
+    return difficulty;
 }
 
 
