@@ -1,5 +1,7 @@
 ﻿DateTime date = DateTime.Now;
 
+List<string> games = new List<string>();
+
 Header();
 
 string name = GetName();
@@ -25,6 +27,7 @@ void Menu(string name)
     while (isGameOn)
     {
         Console.WriteLine(@"What game would you like to play? Choose from the option below:
+     V - View Previous Games.
      A - Addition.
      S - Subtraction.
      M - Multiplication.
@@ -36,6 +39,9 @@ void Menu(string name)
 
         switch (gameSelected.Trim().ToUpper())
         {
+            case "V":
+                GetGames();
+                break;
             case "A":
                 AdditionGame("Addition Game");
                 break;
@@ -96,7 +102,7 @@ void AdditionGame(string message)
 
     Random random = new Random();
     int correctAnswers = 0;
-    int incorrectAnswers = 0;
+    int wrongAnswers = 0;
 
     int firstNumber;
     int secondNumber;
@@ -111,15 +117,15 @@ void AdditionGame(string message)
         if (int.Parse(result) == firstNumber + secondNumber)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Your answer was correct!\n");
+            Console.WriteLine("Correct!\n");
             Console.ResetColor();
             correctAnswers++;
         } else
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Your answer was incorrect.\n");
+            Console.WriteLine("Wrong!\n");
             Console.ResetColor();
-            incorrectAnswers++;
+            wrongAnswers++;
         }
 
         if (i == 4)
@@ -130,9 +136,9 @@ void AdditionGame(string message)
             Console.WriteLine(correctAnswers);
             Console.ResetColor();
 
-            Console.Write("Incorrect: ");
+            Console.Write("Wrong: ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(incorrectAnswers);
+            Console.WriteLine(wrongAnswers);
             Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine("Press any key to go back to the main menu.");
@@ -142,6 +148,7 @@ void AdditionGame(string message)
 
     }
 
+    AddToHistory(correctAnswers, wrongAnswers, "Addition");
 
 }
 
@@ -152,7 +159,7 @@ void SubtractionGame(string message)
 
     Random random = new Random();
     int correctAnswers = 0;
-    int incorrectAnswers = 0;
+    int wrongAnswers = 0;
 
     int firstNumber;
     int secondNumber;
@@ -176,7 +183,7 @@ void SubtractionGame(string message)
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Your answer was incorrect.\n");
             Console.ResetColor();
-            incorrectAnswers++;
+            wrongAnswers++;
         }
 
         if (i == 4)
@@ -187,9 +194,9 @@ void SubtractionGame(string message)
             Console.WriteLine(correctAnswers);
             Console.ResetColor();
 
-            Console.Write("Incorrect: ");
+            Console.Write("Wrong: ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(incorrectAnswers);
+            Console.WriteLine(wrongAnswers);
             Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine("Press any key to go back to the main menu.");
@@ -198,6 +205,8 @@ void SubtractionGame(string message)
 
 
     }
+
+    AddToHistory(correctAnswers, wrongAnswers, "Subtraction");
 }
 
 void MultiplicationGame(string message)
@@ -207,7 +216,7 @@ void MultiplicationGame(string message)
 
     Random random = new Random();
     int correctAnswers = 0;
-    int incorrectAnswers = 0;
+    int wrongAnswers = 0;
 
     int firstNumber;
     int secondNumber;
@@ -231,7 +240,7 @@ void MultiplicationGame(string message)
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Your answer was incorrect.\n");
             Console.ResetColor();
-            incorrectAnswers++;
+            wrongAnswers++;
         }
 
         if (i == 4)
@@ -242,17 +251,17 @@ void MultiplicationGame(string message)
             Console.WriteLine(correctAnswers);
             Console.ResetColor();
 
-            Console.Write("Incorrect: ");
+            Console.Write("Wrong: ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(incorrectAnswers);
+            Console.WriteLine(wrongAnswers);
             Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine("Press any key to go back to the main menu.");
             Console.ReadLine();
         }
-
-
     }
+    
+    AddToHistory(correctAnswers, wrongAnswers, "Multiplication");
 }
 
 void DivisionGame(string message)
@@ -261,7 +270,7 @@ void DivisionGame(string message)
     Console.WriteLine(message);
 
     int correctAnswers = 0;
-    int incorrectAnswers = 0;
+    int wrongAnswers = 0;
 
     for (int i = 0; i < 5; i++)
     {
@@ -284,7 +293,7 @@ void DivisionGame(string message)
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Your answer was incorrect.\n");
             Console.ResetColor();
-            incorrectAnswers++;
+            wrongAnswers++;
         }
 
         if (i == 4)
@@ -295,15 +304,17 @@ void DivisionGame(string message)
             Console.WriteLine(correctAnswers);
             Console.ResetColor();
 
-            Console.Write("Incorrect: ");
+            Console.Write("Wrong: ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(incorrectAnswers);
+            Console.WriteLine(wrongAnswers);
             Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine("Press any key to go back to the main menu.");
             Console.ReadLine() ;
         }
     }
+
+    AddToHistory(correctAnswers, wrongAnswers, "Division");
 }
 
 int[] GetDivisionNumbers()
@@ -324,6 +335,27 @@ int[] GetDivisionNumbers()
     result[1] = secondNumber;
 
     return result;
+}
+
+void GetGames()
+{
+    Console.Clear();
+    Console.WriteLine("Games Hestory");
+    Console.WriteLine("-------------------");
+
+    foreach (string game in games)
+    {
+        Console.WriteLine(game);
+    }
+
+    Console.WriteLine("-------------------\n");
+    Console.WriteLine("Press any key to go back to the main menu.");
+    Console.ReadLine();
+}
+
+void AddToHistory(int correct, int wrong, string gameType)
+{
+    games.Add($"{DateTime.Now} - {gameType} - Correct: {correct} Wrong: {wrong}");
 }
 
 
