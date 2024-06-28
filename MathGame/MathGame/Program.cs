@@ -62,7 +62,7 @@ void Menu(string name)
                 isGameOn = false;
                 break;
             default:
-                Console.WriteLine("Invalid Input");
+                Console.WriteLine("Invalid Input, try again..");
                 break;
         }
         Console.Clear();
