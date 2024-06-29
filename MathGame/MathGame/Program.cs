@@ -1,4 +1,6 @@
-﻿DateTime date = DateTime.Now;
+﻿using System.Diagnostics;
+
+DateTime date = DateTime.Now;
 
 List<string> games = new List<string>();
 
@@ -60,7 +62,7 @@ void Menu(string name)
                 isGameOn = false;
                 break;
             default:
-                Console.WriteLine("Invalid Input");
+                Console.WriteLine("Invalid Input, try again..");
                 break;
         }
         Console.Clear();
@@ -100,18 +102,25 @@ void AdditionGame(string message)
     Console.Clear();
     Console.WriteLine(message);
 
+    Stopwatch timer = new Stopwatch();
     Random random = new Random();
+
     int correctAnswers = 0;
     int wrongAnswers = 0;
+    string gameTime = "";
 
     int firstNumber = 0;
     int secondNumber = 0;
 
+    int questions = 0;
     string gameLevel = Difficulty();
 
-    for (int i = 0; i < 5; i++)
+    Console.WriteLine("How many questions do you want the game to be? ");
+    int userChoice = Convert.ToInt32(Console.ReadLine());
+    
+    timer.Start();
+    while (questions < userChoice)
     {
-
         if (gameLevel == "Easy")
         {
             firstNumber = random.Next(1, 26);
@@ -139,7 +148,8 @@ void AdditionGame(string message)
             Console.WriteLine("Correct!\n");
             Console.ResetColor();
             correctAnswers++;
-        } else
+        }
+        else
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Wrong!\n");
@@ -147,27 +157,33 @@ void AdditionGame(string message)
             wrongAnswers++;
         }
 
-        if (i == 4)
-        {
-            Console.WriteLine("Game over.. your score is:");
-            Console.Write("Correct: ");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(correctAnswers);
-            Console.ResetColor();
-
-            Console.Write("Wrong: ");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(wrongAnswers);
-            Console.ResetColor();
-            Console.WriteLine();
-            Console.WriteLine("Press any key to go back to the main menu.");
-            Console.ReadLine();
-        }
-       
-
+        questions++;
     }
+    timer.Stop();
 
-    AddToHistory(correctAnswers, wrongAnswers, "Addition", gameLevel);
+    gameTime = timer.Elapsed.ToString("mm\\:ss");
+
+    Console.WriteLine("Game over.. your score is:");
+    Console.Write("Correct: ");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine(correctAnswers);
+    Console.ResetColor();
+
+    Console.Write("Wrong: ");
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine(wrongAnswers);
+    Console.ResetColor();
+
+    Console.Write("Time: ");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine(gameTime);
+    Console.ResetColor();
+
+    Console.WriteLine();
+    Console.WriteLine("Press any key to go back to the main menu.");
+    Console.ReadLine();
+
+    AddToHistory(correctAnswers, wrongAnswers, "Addition", gameLevel, gameTime);
 
 }
 
@@ -182,6 +198,8 @@ void SubtractionGame(string message)
 
     int firstNumber;
     int secondNumber;
+
+    string gameLevel = Difficulty();
 
     for (int i = 0; i < 5; i++)
     {
@@ -225,7 +243,8 @@ void SubtractionGame(string message)
 
     }
 
-    AddToHistory(correctAnswers, wrongAnswers, "Subtraction");
+    
+
 }
 
 void MultiplicationGame(string message)
@@ -239,6 +258,8 @@ void MultiplicationGame(string message)
 
     int firstNumber;
     int secondNumber;
+
+    string gameLevel = Difficulty();
 
     for (int i = 0; i < 5; i++)
     {
@@ -279,8 +300,8 @@ void MultiplicationGame(string message)
             Console.ReadLine();
         }
     }
+
     
-    AddToHistory(correctAnswers, wrongAnswers, "Multiplication");
 }
 
 void DivisionGame(string message)
@@ -290,6 +311,8 @@ void DivisionGame(string message)
 
     int correctAnswers = 0;
     int wrongAnswers = 0;
+
+    string gameLevel = Difficulty();
 
     for (int i = 0; i < 5; i++)
     {
@@ -333,7 +356,7 @@ void DivisionGame(string message)
         }
     }
 
-    AddToHistory(correctAnswers, wrongAnswers, "Division");
+    
 }
 
 int[] GetDivisionNumbers()
@@ -372,9 +395,9 @@ void GetGames()
     Console.ReadLine();
 }
 
-void AddToHistory(int correct, int wrong, string gameType, string difficulty)
+void AddToHistory(int correct, int wrong, string gameType, string difficulty, string time)
 {
-    games.Add($"{DateTime.Now} - {gameType} - {difficulty} - Correct: {correct} Wrong: {wrong}");
+    games.Add($"{DateTime.Now} - {gameType} - {difficulty} - Correct: {correct} Wrong: {wrong} Time: {time}");
 }
 
 string Difficulty()
