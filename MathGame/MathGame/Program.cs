@@ -25,7 +25,6 @@ void Menu(string name)
     // Show the greeting only once
     Greeting(name);
 
-
     while (isGameOn)
     {
         Console.WriteLine(@"What game would you like to play? Choose from the option below:
@@ -37,38 +36,45 @@ void Menu(string name)
      Q - Quit the program.");
         Console.WriteLine("------------------------------------------------------");
 
-        string gameSelected = Console.ReadLine();
+     string gameSelected = Console.ReadLine();
 
-        switch (gameSelected.Trim().ToUpper())
-        {
-            case "V":
-                GetGames();
-                break;
-            case "A":
-                AdditionGame("Addition Game");
-                break;
-            case "S":
-                SubtractionGame("Subtraction Game");
-                break;
-            case "M":
-                MultiplicationGame("Multiplication Game");
-                break;
-            case "D":
-                DivisionGame("Division Game");
-                break;
-            case "Q":
-                Console.WriteLine($"Goodbye.. {name}");
-                Environment.Exit(0);
-                isGameOn = false;
-                break;
-            default:
-                Console.WriteLine("Invalid Input, try again..");
-                break;
-        }
-        Console.Clear();
-    } 
+         switch (gameSelected.Trim().ToUpper())
+         {
+             case "V":
+                 GetGames();
+                   
+                 break;
+             case "A":
+                 AdditionGame("Addition Game");
+                   
+                 break;
+             case "S":
+                 SubtractionGame("Subtraction Game");
+                   
+                 break;
+             case "M":
+                 MultiplicationGame("Multiplication Game");
+                   
+                 break;
+             case "D":
+                 DivisionGame("Division Game");
+                  
+                 break;
+             case "Q":
+                 Console.WriteLine($"Goodbye.. {name}!");
+                 Environment.Exit(0);
+                 isGameOn = false;
+                 break;
+             default:
+                Console.Clear();
+                Console.WriteLine("Invalid Input, try again..\n");
+                 break;
+         }
+    }
 
-}
+} 
+
+
 
 void Greeting(string name)
 {
@@ -116,10 +122,11 @@ void AdditionGame(string message)
     string gameLevel = Difficulty();
 
     Console.WriteLine("How many questions do you want the game to be? ");
-    int userChoice = Convert.ToInt32(Console.ReadLine());
+    string input = Console.ReadLine();
     
+
     timer.Start();
-    while (questions < userChoice)
+    while (questions < Convert.ToInt32(input))
     {
         if (gameLevel == "Easy")
         {
@@ -184,6 +191,7 @@ void AdditionGame(string message)
     Console.ReadLine();
 
     AddToHistory(correctAnswers, wrongAnswers, "Addition", gameLevel, gameTime);
+    Console.Clear();
 
 }
 
@@ -393,6 +401,7 @@ void GetGames()
     Console.WriteLine("-------------------\n");
     Console.WriteLine("Press any key to go back to the main menu.");
     Console.ReadLine();
+    Console.Clear();
 }
 
 void AddToHistory(int correct, int wrong, string gameType, string difficulty, string time)
