@@ -76,6 +76,25 @@ void Menu(string name)
 
 
 
+
+int ParseToInt(string input)
+{
+    int number = 2;
+    bool isValid = false;
+
+    while (isValid)
+    {
+        if (int.TryParse(input, out number))
+        {
+            isValid = true;
+        }
+        else
+        {
+            Console.WriteLine("Enter a valid number!");
+        }
+    }
+    return number;
+}
 void Greeting(string name)
 {
     int hour = Convert.ToInt32(date.Hour.ToString());
@@ -122,11 +141,11 @@ void AdditionGame(string message)
     string gameLevel = Difficulty();
 
     Console.WriteLine("How many questions do you want the game to be? ");
-    string input = Console.ReadLine();
-    
+    string userChoice = Console.ReadLine();
+   
 
     timer.Start();
-    while (questions < Convert.ToInt32(input))
+    while (questions < Convert.ToInt32(userChoice))
     {
         if (gameLevel == "Easy")
         {
